@@ -19,6 +19,8 @@
     --line: #E2E8F0;
     --bg: #FAFAFA;
     --paper: #FFFFFF;
+    --red: #DC2626;
+    --red-soft: #FEE2E2;
   }
 
   body {
@@ -71,24 +73,25 @@
 
   /* ---------- Thesis slide (conclusion-dominant) ---------- */
   .slide-thesis {
-    padding: 80px 100px;
+    padding: 72px 100px 80px;
     justify-content: center;
   }
   .slide-thesis .step-label {
     font-size: 13px; font-weight: 700; color: var(--accent);
     letter-spacing: 3px; text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
     display: flex; align-items: center; gap: 14px;
   }
   .slide-thesis .step-label::before {
     content: ''; width: 36px; height: 3px; background: var(--accent); border-radius: 2px;
   }
   .slide-thesis .thesis {
-    font-size: 64px; font-weight: 800; color: var(--ink);
+    font-size: 60px; font-weight: 800; color: var(--ink);
     line-height: 1.2; letter-spacing: -0.5px;
     max-width: 1080px;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
   }
+  .slide-thesis .thesis.smaller { font-size: 52px; }
   .slide-thesis .thesis em {
     font-style: normal; color: var(--accent); font-weight: 900;
   }
@@ -100,13 +103,13 @@
     font-weight: 700;
   }
   .slide-thesis .support {
-    display: flex; flex-direction: column; gap: 16px;
-    max-width: 900px;
+    display: flex; flex-direction: column; gap: 14px;
+    max-width: 980px;
     border-left: 3px solid var(--line);
     padding-left: 28px;
   }
   .slide-thesis .support .line {
-    font-size: 19px; color: var(--ink-soft); line-height: 1.6; font-weight: 500;
+    font-size: 18px; color: var(--ink-soft); line-height: 1.6; font-weight: 500;
   }
   .slide-thesis .support .line strong { color: var(--ink); font-weight: 700; }
   .slide-thesis .support .line .tag {
@@ -115,55 +118,107 @@
     font-size: 14px; font-weight: 700; border-radius: 6px;
     margin-right: 10px;
   }
+  .slide-thesis .support .line .tag.red {
+    background: var(--red-soft); color: var(--red);
+  }
 
-  /* ---------- Number panel (for deal structure slide) ---------- */
+  /* ---------- Number panel ---------- */
   .num-panel {
     display: grid; grid-template-columns: repeat(3, 1fr);
-    gap: 32px; margin-top: 16px; margin-bottom: 36px;
+    gap: 28px; margin-top: 8px; margin-bottom: 32px;
     max-width: 1080px;
   }
   .num-panel .item {
-    background: var(--paper); padding: 28px 32px;
+    background: var(--paper); padding: 24px 28px;
     border-radius: 14px; border: 1px solid var(--line);
     box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   }
   .num-panel .label { font-size: 13px; color: var(--muted); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
-  .num-panel .value { font-size: 42px; font-weight: 900; color: var(--ink); margin-top: 8px; letter-spacing: -1px; }
-  .num-panel .value .unit { font-size: 22px; color: var(--muted); font-weight: 700; margin-left: 4px; }
+  .num-panel .value { font-size: 40px; font-weight: 900; color: var(--ink); margin-top: 6px; letter-spacing: -1px; }
+  .num-panel .value .unit { font-size: 20px; color: var(--muted); font-weight: 700; margin-left: 4px; }
+  .num-panel .value.accent { color: var(--accent); }
+  .num-panel .value.red { color: var(--red); }
 
-  /* ---------- Split panel (two-column comparison) ---------- */
+  /* ---------- Split panel ---------- */
   .split {
     display: grid; grid-template-columns: 1fr 1fr;
-    gap: 32px; max-width: 1100px;
+    gap: 28px; max-width: 1080px;
   }
   .split .col {
-    padding: 32px;
+    padding: 28px;
     background: var(--paper); border-radius: 14px;
     border: 1px solid var(--line);
   }
   .split .col .head {
     font-size: 14px; font-weight: 700; color: var(--accent);
-    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px;
   }
-  .split .col .body { font-size: 20px; color: var(--ink); font-weight: 600; line-height: 1.5; }
-  .split .col .sub { font-size: 15px; color: var(--muted); margin-top: 12px; line-height: 1.6; }
+  .split .col .head.red { color: var(--red); }
+  .split .col .body { font-size: 20px; color: var(--ink); font-weight: 700; line-height: 1.5; }
+  .split .col .sub { font-size: 14px; color: var(--muted); margin-top: 12px; line-height: 1.6; }
 
-  /* ---------- Numbered list (for "next steps") ---------- */
-  .num-list { display: flex; flex-direction: column; gap: 20px; max-width: 1000px; }
-  .num-list .item {
-    display: flex; align-items: flex-start; gap: 20px;
-    padding: 20px 24px;
-    background: var(--paper); border-radius: 12px;
+  /* ---------- Comparison table (US vs China) ---------- */
+  .cmp-table {
+    max-width: 1080px; background: var(--paper);
+    border-radius: 14px; border: 1px solid var(--line);
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .cmp-table .row {
+    display: grid; grid-template-columns: 2.2fr 1fr 1fr;
+    border-bottom: 1px solid var(--line);
+  }
+  .cmp-table .row:last-child { border-bottom: none; }
+  .cmp-table .row.head {
+    background: #F1F5F9; font-size: 13px; font-weight: 700;
+    color: var(--muted); letter-spacing: 1px; text-transform: uppercase;
+  }
+  .cmp-table .cell {
+    padding: 16px 24px;
+    font-size: 17px; color: var(--ink); font-weight: 600;
+    border-right: 1px solid var(--line);
+    display: flex; align-items: center;
+  }
+  .cmp-table .cell:last-child { border-right: none; }
+  .cmp-table .cell.us { color: var(--ink); }
+  .cmp-table .cell.cn { color: var(--red); font-weight: 800; }
+  .cmp-table .cell.label { color: var(--ink-soft); font-weight: 600; }
+  .cmp-table .row.head .cell { font-weight: 700; color: var(--muted); }
+
+  /* ---------- Mini-card grid (acquisition deals, FDE talent etc.) ---------- */
+  .mini-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 20px; max-width: 1080px; margin-bottom: 24px;
+  }
+  .mini-card {
+    background: var(--paper); padding: 22px 24px;
+    border-radius: 12px; border: 1px solid var(--line);
+  }
+  .mini-card .mtag {
+    display: inline-block; padding: 3px 10px;
+    background: var(--accent-soft); color: var(--accent-dark);
+    font-size: 12px; font-weight: 700; border-radius: 6px;
+    margin-bottom: 10px; letter-spacing: 1px;
+  }
+  .mini-card .mname { font-size: 22px; font-weight: 800; color: var(--ink); margin-bottom: 6px; }
+  .mini-card .msub { font-size: 14px; color: var(--muted); line-height: 1.55; font-weight: 500; }
+  .mini-card .msub strong { color: var(--ink); font-weight: 700; }
+
+  /* ---------- Compact case list ---------- */
+  .case-list {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 12px 24px;
+    max-width: 1080px; margin-bottom: 22px;
+  }
+  .case-list .case {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 12px 16px;
+    background: var(--paper); border-radius: 10px;
     border: 1px solid var(--line);
   }
-  .num-list .item .n {
-    width: 36px; height: 36px; border-radius: 10px;
-    background: var(--accent); color: #fff;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 17px; font-weight: 800; flex-shrink: 0;
-  }
-  .num-list .item .txt { font-size: 19px; color: var(--ink); font-weight: 600; line-height: 1.5; }
-  .num-list .item .txt span { color: var(--muted); font-weight: 500; font-size: 16px; }
+  .case-list .case .cn { font-size: 16px; font-weight: 800; color: var(--accent); min-width: 110px; }
+  .case-list .case .ct { font-size: 14px; color: var(--ink-soft); line-height: 1.5; font-weight: 500; }
+  .case-list .case .ct strong { color: var(--red); font-weight: 700; }
 
   /* ---------- Slide footer ---------- */
   .slide-footer {
@@ -198,25 +253,32 @@
       min-height: 100vh; height: auto; display: none;
     }
     .slide.active { display: flex; }
-    .slide-thesis { padding: 40px 24px 80px; }
-    .slide-thesis .thesis { font-size: 32px; }
-    .slide-thesis .support .line { font-size: 16px; }
+    .slide-thesis { padding: 40px 22px 80px; }
+    .slide-thesis .thesis { font-size: 30px; }
+    .slide-thesis .thesis.smaller { font-size: 26px; }
+    .slide-thesis .support .line { font-size: 15px; }
     .slide-thesis .step-label { font-size: 11px; margin-bottom: 20px; }
     .slide-title h1 { font-size: 40px; }
     .slide-title .subtitle { font-size: 16px; margin-top: 16px; }
     .slide-title .top-label { top: 24px; left: 24px; font-size: 11px; }
     .slide-title .bottom { bottom: 24px; right: 24px; font-size: 11px; }
     .num-panel { grid-template-columns: 1fr; gap: 12px; }
-    .num-panel .item { padding: 18px 20px; }
-    .num-panel .value { font-size: 32px; }
-    .split { grid-template-columns: 1fr; gap: 16px; }
-    .split .col { padding: 20px; }
+    .num-panel .item { padding: 16px 18px; }
+    .num-panel .value { font-size: 30px; }
+    .split { grid-template-columns: 1fr; gap: 14px; }
+    .split .col { padding: 18px; }
     .split .col .body { font-size: 17px; }
-    .num-list .item { padding: 14px 16px; gap: 14px; }
-    .num-list .item .n { width: 30px; height: 30px; font-size: 14px; }
-    .num-list .item .txt { font-size: 15px; }
-    .num-list .item .txt span { font-size: 13px; }
-    .slide-footer { left: 24px; bottom: 20px; }
+    .cmp-table .row { grid-template-columns: 1.5fr 1fr 1fr; }
+    .cmp-table .cell { padding: 10px 12px; font-size: 13px; }
+    .cmp-table .row.head .cell { font-size: 11px; }
+    .mini-grid { grid-template-columns: 1fr; gap: 12px; }
+    .mini-card { padding: 16px 18px; }
+    .mini-card .mname { font-size: 18px; }
+    .case-list { grid-template-columns: 1fr; gap: 8px; }
+    .case-list .case { padding: 10px 12px; flex-direction: column; gap: 4px; }
+    .case-list .case .cn { font-size: 14px; }
+    .case-list .case .ct { font-size: 13px; }
+    .slide-footer { left: 22px; bottom: 20px; }
     .nav { opacity: 1; bottom: 16px; right: 16px; }
     .nav button { width: 40px; height: 40px; font-size: 16px; }
     .slide-counter { opacity: 1; bottom: 22px; }
@@ -234,7 +296,7 @@
       <h1>Anthropic & OpenAI<br>× PE JV</h1>
       <p class="subtitle">用 PE Portfolio 把 FDE 工业化 — 这是一个怎样的局？</p>
     </div>
-    <div class="bottom">2026.05.24<br>研究汇报</div>
+    <div class="bottom">2026.05.24<br>研究汇报 · v2.1</div>
   </div>
 
   <!-- Slide 2 — TL;DR -->
@@ -247,7 +309,7 @@
       <div class="line"><span class="tag">美国能做</span>因为它有 SaaS 时代沉淀的 <strong>"数字化底座"</strong></div>
       <div class="line"><span class="tag">中国能否复刻</span>关键就在<strong>这一层底座是否存在</strong></div>
     </div>
-    <div class="slide-footer">01 / 09</div>
+    <div class="slide-footer">01 / 12</div>
   </div>
 
   <!-- Slide 3 — 事件全景 -->
@@ -265,7 +327,7 @@
       <div class="item">
         <div class="label">OpenAI 侧 (DeployCo)</div>
         <div class="value">$10<span class="unit">B</span></div>
-        <div class="label" style="margin-top:8px; text-transform:none; letter-spacing:0;">TPG 主导 · 17.5%/5年保底</div>
+        <div class="label" style="margin-top:8px; text-transform:none; letter-spacing:0;">TPG 主导 · 17.5%/5 年保底</div>
       </div>
       <div class="item">
         <div class="label">落地形式</div>
@@ -276,7 +338,7 @@
     <div class="support">
       <div class="line"><strong>同日 = 行业共识信号</strong>：C 端触顶 + B 端自建太慢 + IPO 估值压力近在眼前。</div>
     </div>
-    <div class="slide-footer">02 / 09</div>
+    <div class="slide-footer">02 / 12</div>
   </div>
 
   <!-- Slide 4 — 双方诉求 -->
@@ -297,10 +359,10 @@
         <div class="sub">一鱼两吃：既参与最 hot 的 AI 资产；又用 JV 给自家 portfolio 提效 → 自己的 IRR 直接提升。</div>
       </div>
     </div>
-    <div class="slide-footer">03 / 09</div>
+    <div class="slide-footer">03 / 12</div>
   </div>
 
-  <!-- Slide 5 — 交易结构 -->
+  <!-- Slide 5 — 交易结构 / 出资估值 -->
   <div class="slide slide-thesis" data-index="4">
     <div class="step-label">交易结构 · 新发现 (1)</div>
     <div class="thesis">
@@ -317,16 +379,16 @@
       </div>
       <div class="item">
         <div class="label">JV 估值</div>
-        <div class="value">~$100<span class="unit">亿</span></div>
+        <div class="value accent">~$100<span class="unit">亿</span></div>
       </div>
     </div>
     <div class="support">
       <div class="line">OpenAI 把<strong>客户资源 + 模型授权 + 品牌</strong>作为非现金对价计入估值 — 等于让 PE 的钱替它的 infrastructure play 买单。</div>
     </div>
-    <div class="slide-footer">04 / 09</div>
+    <div class="slide-footer">04 / 12</div>
   </div>
 
-  <!-- Slide 6 — 17.5% 保底 + 兑付 -->
+  <!-- Slide 6 — 17.5% 保底 -->
   <div class="slide slide-thesis" data-index="5">
     <div class="step-label">交易结构 · 新发现 (2)</div>
     <div class="thesis">
@@ -338,24 +400,35 @@
       <div class="line"><span class="tag">兑付方式</span>① IPO 后用 OpenAI 股票还（隐性可转债） ② 用 token credit 抵债（未来算力红利）。</div>
       <div class="line"><span class="tag">本质</span>都是<strong>用未来叙事对冲今天的现金压力</strong> — 先把局做大、再来 reconcile。</div>
     </div>
-    <div class="slide-footer">05 / 09</div>
+    <div class="slide-footer">05 / 12</div>
   </div>
 
-  <!-- Slide 7 — 启动方式 -->
+  <!-- Slide 7 — JV 启动: 两笔已公开的收购 -->
   <div class="slide slide-thesis" data-index="6">
     <div class="step-label">执行 · JV 怎么启动</div>
-    <div class="thesis">
-      JV 第一步<em>不是从零招 FDE</em> — 它去收购 Accenture-like 的小公司。
+    <div class="thesis smaller">
+      JV 不是从零招人 — 它去买<em>"已经在帮 Frontier Model 落地的精品店"</em>。
+    </div>
+    <div class="mini-grid">
+      <div class="mini-card">
+        <span class="mtag">OPENAI 已收购</span>
+        <div class="mname">Tomoro</div>
+        <div class="msub">爱丁堡 · 2023 由 OpenAI 联盟成立。<br><strong>~150 名 FDE</strong>；客户：Virgin Atlantic / Fidelity / Tesco / Red Bull / NBA。</div>
+      </div>
+      <div class="mini-card">
+        <span class="mtag">ANTHROPIC JV 已收购</span>
+        <div class="mname">Fractional AI</div>
+        <div class="msub">旧金山 · applied AI services。<br>团队<strong>百人级</strong>，作为新 JV 的 founding operational centerpiece。</div>
+      </div>
     </div>
     <div class="support">
-      <div class="line">这些公司有 <strong>SaaS 时代积累的大量驻场工程师</strong> = 现成的 FDE 池。</div>
-      <div class="line">因 AI 冲击，<strong>估值偏低</strong> = 现在是 buyer's market。</div>
-      <div class="line">现成的<strong>客户合同 + 行业 know-how</strong> 也能一并接过来。</div>
+      <div class="line">→ 标的都是 <strong>100-200 人的精品店</strong>，<strong>不是 Accenture/Deloitte 这种大象</strong>。</div>
+      <div class="line">→ 信号：JV 跑通的前提是<strong>"懂模型的人"</strong>驻场，而不是"懂客户业务但不懂模型"的传统咨询师。</div>
     </div>
-    <div class="slide-footer">06 / 09</div>
+    <div class="slide-footer">06 / 12</div>
   </div>
 
-  <!-- Slide 8 — 数字化→AI化 -->
+  <!-- Slide 8 — 数字化 → AI 化 -->
   <div class="slide slide-thesis" data-index="7">
     <div class="step-label">执行 · 核心论断</div>
     <div class="thesis">
@@ -363,47 +436,150 @@
       不是 <span class="strike">信息化 → AI 化</span> 的三级跳。
     </div>
     <div class="support">
-      <div class="line">美国企业经过 SaaS 一轮洗礼（Salesforce / Workday / ServiceNow…），<strong>数字化占比远高于中国</strong>。</div>
-      <div class="line">FDE 进场时，<strong>底层数据 / SaaS API / workflow 已经存在</strong>，AI 只需要嫁接在上面。</div>
-      <div class="line">改造摩擦小 → ROI 显性化快 → <strong>JV 的经济模型才跑得通</strong>。</div>
+      <div class="line"><span class="tag">信息化</span>把流程搬进系统（ERP / 财务）→ <strong>让数据被记录下来</strong>。</div>
+      <div class="line"><span class="tag">数字化</span>系统打通、上云、API 化（SaaS / 数据中台）→ <strong>让数据能流动、能被调用</strong>。</div>
+      <div class="line"><span class="tag">AI 化</span>在前两层之上嵌入 agent → <strong>让决策被机器做出</strong>。</div>
+      <div class="line" style="margin-top:6px;">→ <strong>没有 API 就没有 agent 可调的工具，没有结构化数据就没有可检索的语料。AI 化必须站在数字化的肩膀上。</strong></div>
     </div>
-    <div class="slide-footer">07 / 09</div>
+    <div class="slide-footer">07 / 12</div>
   </div>
 
-  <!-- Slide 9 — FDE 中国老路 -->
+  <!-- Slide 9 — 中美底座厚度数据 -->
   <div class="slide slide-thesis" data-index="8">
-    <div class="step-label">执行 · 隐性挑战</div>
+    <div class="step-label">关键数据 · 中美底座厚度</div>
     <div class="thesis">
-      FDE 不是新发明 — <em>中国早做过，坑也踩过</em>。
+      中美在"底座"上的差距，是<em>数量级</em>的。
+    </div>
+    <div class="cmp-table">
+      <div class="row head">
+        <div class="cell">维度</div>
+        <div class="cell">🇺🇸 美国</div>
+        <div class="cell">🇨🇳 中国</div>
+      </div>
+      <div class="row">
+        <div class="cell label">企业 CRM 渗透率</div>
+        <div class="cell us">~75%</div>
+        <div class="cell cn">&lt; 15%</div>
+      </div>
+      <div class="row">
+        <div class="cell label">中小企业 SaaS / ERP 渗透</div>
+        <div class="cell us">SMB ~88%</div>
+        <div class="cell cn">中小 ERP &lt; 30%</div>
+      </div>
+      <div class="row">
+        <div class="cell label">制造业生产数据"AI-readable"率</div>
+        <div class="cell us">—（高度结构化）</div>
+        <div class="cell cn">~30%</div>
+      </div>
+      <div class="row">
+        <div class="cell label">产业数字化 / GDP 占比</div>
+        <div class="cell us">领先</div>
+        <div class="cell cn">约美国 1/2</div>
+      </div>
     </div>
     <div class="support">
-      <div class="line"><span class="tag">坑 1</span><strong>"两头不是人"</strong> — 客户不信任驻场的人，工程师离自己老板又远。</div>
-      <div class="line"><span class="tag">坑 2</span><strong>人才流失</strong> — FDE 带着"在 X 客户的实战经验"跳到对家。</div>
-      <div class="line"><span class="tag">坑 3</span><strong>价值归属模糊</strong> — 改造成果算客户的还是 JV 的？容易扯皮。</div>
-      <div class="line" style="margin-top:6px;">→ 美方真正的隐性挑战是<strong>"管理半径 + 激励设计"</strong>。</div>
+      <div class="line">→ FDE 进入中国客户时会<strong>自动退化成"先帮你做数字化、再谈 AI 化"</strong>，单位 ROI 被砍半，JV 的经济模型可能直接不成立。</div>
     </div>
-    <div class="slide-footer">08 / 09</div>
+    <div class="slide-footer">08 / 12</div>
   </div>
 
-  <!-- Slide 10 — 对中国 + 对投资 -->
+  <!-- Slide 10 — FDE 中国老路 -->
   <div class="slide slide-thesis" data-index="9">
-    <div class="step-label">启发 · 对中国 / 对投资</div>
+    <div class="step-label">执行 · 隐性挑战</div>
+    <div class="thesis smaller">
+      FDE 不是新发明 — <em>中国早做过 30 年，坑也踩遍了</em>。
+    </div>
+    <div class="case-list">
+      <div class="case"><div class="cn">用友 / 金蝶</div><div class="ct">ERP 驻场实施 → <strong>客制吞噬标准化</strong>，毛利从软件被压成项目</div></div>
+      <div class="case"><div class="cn">中软国际</div><div class="ct">~9 万员工大量驻场华为 → <strong>命脉绑死单一大客户</strong></div></div>
+      <div class="case"><div class="cn">文思海辉</div><div class="ct">~3 万员工 / 55 国 → <strong>低毛利人头生意，长不出产品</strong></div></div>
+      <div class="case"><div class="cn">东软 / 神州数码</div><div class="ct">政企 SI → <strong>项目周期 2-3 年，回款慢</strong></div></div>
+      <div class="case"><div class="cn">Palantir 中国</div><div class="ct">2015-2017 上海办公室 → <strong>数据敏感 + 付费习惯不对，关停退出</strong></div></div>
+      <div class="case"><div class="cn">华为云行业方案</div><div class="ct">客户云迁移驻场 40+ 人 → <strong>被裹挟进非核心需求</strong></div></div>
+    </div>
+    <div class="support">
+      <div class="line">→ <strong>"驻场"不是模式问题，是经济模型问题</strong>。ROI 不能支撑 $200-450K 薪酬时，模式必然向"低价人头"塌陷。</div>
+    </div>
+    <div class="slide-footer">09 / 12</div>
+  </div>
+
+  <!-- Slide 11 — FDE 人才储备中美对比 -->
+  <div class="slide slide-thesis" data-index="10">
+    <div class="step-label">人才 · 中美对比</div>
     <div class="thesis">
-      中国的瓶颈<em>不在 FDE 人才</em>，而在<em>数字化底座</em>。
+      中国 FDE 人头<em>多一个数量级</em>，但<em>养不起</em>。
+    </div>
+    <div class="cmp-table">
+      <div class="row head">
+        <div class="cell">项</div>
+        <div class="cell">🇺🇸 美国</div>
+        <div class="cell">🇨🇳 中国</div>
+      </div>
+      <div class="row">
+        <div class="cell label">代表公司 FDE 量级</div>
+        <div class="cell us">Palantir ~3,000<br>Tomoro ~150</div>
+        <div class="cell cn">中软 ~90,000<br>文思海辉 ~30,000</div>
+      </div>
+      <div class="row">
+        <div class="cell label">FDE 起薪 / 资深</div>
+        <div class="cell us">$200-250K / $300-450K</div>
+        <div class="cell cn">&lt; 美国 1/3</div>
+      </div>
+    </div>
+    <div class="support">
+      <div class="line">→ <strong>供给端不缺人头</strong>，挖人不难。</div>
+      <div class="line">→ <strong>价格端撑不起 Palantir 级薪酬</strong> → 招得到、养不起。</div>
+      <div class="line"><span class="tag red">真正瓶颈</span>"既懂模型又懂客户业务"的复合型 FDE — <strong>国内几乎从 0 培养</strong>。</div>
+    </div>
+    <div class="slide-footer">10 / 12</div>
+  </div>
+
+  <!-- Slide 12 — 数字化转型第二春 -->
+  <div class="slide slide-thesis" data-index="11">
+    <div class="step-label">投资启发 · 数字化转型第二春</div>
+    <div class="thesis">
+      想 AI 化必先有数字化 —<br><em>"为 AI 而生的数字化"</em>这条线已经在跑出来。
     </div>
     <div class="split">
       <div class="col">
-        <div class="head">对中国模型公司</div>
-        <div class="body">国内 FDE 储备反而更厚<br>但中小企业大多没经过 SaaS 洗礼</div>
-        <div class="sub">直接 AI 化的难度和效率会非常低 — 这是中国复刻该模式最大的结构性差异。</div>
+        <div class="head">第一春存量（接"补底座"订单）</div>
+        <div class="body">用友 · 金蝶 · 神州数码<br>东软 · 中软国际 · 软通动力</div>
+        <div class="sub">传统 ERP / SI / 政企，订单确定性强但弹性有限。</div>
       </div>
       <div class="col">
-        <div class="head">对投资</div>
-        <div class="body">① Source 美国 FDE 人才<br>② "数字化转型第二春"主题</div>
-        <div class="sub">想 AI 化必先有数字化 → 传统数字化咨询公司新一轮订单 + 为 AI 而生的新型数字化公司都值得早期 source。</div>
+        <div class="head">第二春新势力（AI-native 底座）</div>
+        <div class="body">滴普科技 · 第四范式<br>数势 · 衡石 · PingCAP</div>
+        <div class="sub"><strong>滴普 2025-10-28 港股上市</strong>："FastData → AI-ready 数据 → FastAGI"，最接近"为 AI 而生"的母版。</div>
       </div>
     </div>
-    <div class="slide-footer">09 / 09</div>
+    <div class="support">
+      <div class="line">→ 关键卡点不是软件，是<strong>数据资产入表 + 生产数据 AI-readable 率</strong>（目前仅 ~30%）。</div>
+    </div>
+    <div class="slide-footer">11 / 12</div>
+  </div>
+
+  <!-- Slide 13 — 中国版形态 -->
+  <div class="slide slide-thesis" data-index="12">
+    <div class="step-label">中国侧推演 · 真正的本土形态</div>
+    <div class="thesis smaller">
+      中国版不会是 <span class="strike">模型公司 × PE × Portfolio</span>，<br>而是 <em>模型公司 × 央企云 × 行业龙头</em>。
+    </div>
+    <div class="split">
+      <div class="col">
+        <div class="head red">PE 在中国为何不灵</div>
+        <div class="body">Portfolio 控制力弱 · 没有 17.5% 工具 · 中型客户层断档</div>
+        <div class="sub">中国民营中型企业（$50M-$500M 营收）底座薄、付费习惯偏项目制、股东结构松散 → JV 推不动。</div>
+      </div>
+      <div class="col">
+        <div class="head">云厂商已在做"准 SI"</div>
+        <div class="body">华为云 40+ 人驻场<br>腾讯云 10+ 行业 / 50+ 方案</div>
+        <div class="sub">已有客户关系 + 行业 know-how + 国资合规通关 — 但缺资本结构 + 估值故事。</div>
+      </div>
+    </div>
+    <div class="support">
+      <div class="line"><span class="tag">推演结论</span>中国版 "PE 角色"可能由 <strong>国资云 / 国家产业基金 / 地方政府引导基金</strong>扮演 — 类比中国电信 5G ToB 模式。</div>
+    </div>
+    <div class="slide-footer">12 / 12</div>
   </div>
 
 </div>
