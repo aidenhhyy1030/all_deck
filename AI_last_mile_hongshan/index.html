@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="zh">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <title>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>
    AI service：从模型能力到实际生产力
   </title>
-  <style>
+<style>
    *{margin:0;padding:0;box-sizing:border-box}
 html,body{background:#5b6470}
 body{font-family:"Kaiti TC","Kaiti SC","STKaiti",Kaiti,"KaiTi",Arial,serif;color:#000}
@@ -169,320 +170,312 @@ body{font-family:"Kaiti TC","Kaiti SC","STKaiti",Kaiti,"KaiTi",Arial,serif;color
  background:rgba(0,0,0,.35);padding:4px 10px;border-radius:20px;font-family:Arial}
 @media print{.deck{height:auto;overflow:visible}.slide{page-break-after:always;min-height:100vh}.hint{display:none}}
   </style>
- </head>
- <body>
-  <div class="deck">
-   <!-- ── Slide 1: AI service：从模型能力到实际生产力 ── -->
-   <section class="slide cover">
-    <div class="cv-bar">
-    </div>
-    <div class="cv-body">
-     <h1 class="cv-title">
+</head>
+<body>
+<div class="deck">
+
+<!-- ── Slide 1: ? | AI service：从模型能力到实际生产力 ── --><section class="slide cover">
+<div class="cv-bar">
+</div>
+<div class="cv-body">
+<h1 class="cv-title">
       AI service：从模型能力到实际生产力
      </h1>
-     <div class="cv-sub">
+<div class="cv-sub">
       GC、OpenAI &amp; Anthropic、Ordo 三种路径的对照观察
      </div>
-     <div class="cv-date">
+<div class="cv-date">
       2026.05
      </div>
-    </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+</div>
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      1 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">1 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 2: 全篇逻辑主线 | GC 与 OpenAI、Anthropic 同时下场，最后一公里成共识，今天分三层看打法 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 2: 全篇逻辑主线 | GC 与 OpenAI、Anthropic 同时下场，最后一公里成共识，今天分三层看打法 ── --><section class="slide">
+<div class="eyebrow">
      全篇逻辑主线
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       GC 与 OpenAI、Anthropic 同时下场，最后一公里成共识，今天分三层看打法
      </h2>
-    </div>
-    <ol class="logic-list">
-     <li>
+</div>
+<ol class="logic-list">
+<li>
       AI 最后一公里 = 把模型 / agent 能力翻译成真实生产力的最后一步，难点在落地，不在模型本身。
      </li>
-     <li>
+<li>
       今天讲这个，是因为 GC 和 OpenAI、Anthropic 都已经把战略重心明确转向这一步，行业从产品打法转向落地打法。
      </li>
-     <li>
+<li>
       我们分三个层面切入：GC 代表投资机构层；OpenAI 与 Anthropic 代表模型公司层；Ordo 是我们 portfolio 里的单公司案例。
      </li>
-     <li>
+<li>
       因为中国数字化底座基础差，IT 层面难以直接 AI 化，更应该学习 GC 的模式，从服务业切入——这是第四部分的核心论点。
      </li>
-    </ol>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+</ol>
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      2 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">2 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 3: 开篇与主线 | AI的瓶颈不在模型能力，而在最后一公里 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 3: 开篇与主线 | AI的瓶颈不在模型能力，而在最后一公里 ── --><section class="slide">
+<div class="eyebrow">
      开篇与主线
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       AI的瓶颈不在模型能力，而在最后一公里
      </h2>
-    </div>
-    <div class="body2 has-viz">
-     <div class="vcol">
-      <svg class="svg" preserveaspectratio="xMidYMid meet" viewbox="0 0 300 210">
-       <path d="M18,52 Q150,225 282,52" fill="none" stroke="#CBD5E1" stroke-width="3">
-       </path>
-       <circle cx="18" cy="52" fill="#00B050" r="7">
-       </circle>
-       <circle cx="150" cy="138" fill="#94A3B8" r="7">
-       </circle>
-       <circle cx="282" cy="52" fill="#00B050" r="9">
-       </circle>
-       <text class="st b" text-anchor="middle" x="18" y="34">
+</div>
+<div class="body2 has-viz">
+<div class="vcol">
+<svg class="svg" preserveaspectratio="xMidYMid meet" viewbox="0 0 300 210">
+<path d="M18,52 Q150,225 282,52" fill="none" stroke="#CBD5E1" stroke-width="3">
+</path>
+<circle cx="18" cy="52" fill="#00B050" r="7">
+</circle>
+<circle cx="150" cy="138" fill="#94A3B8" r="7">
+</circle>
+<circle cx="282" cy="52" fill="#00B050" r="9">
+</circle>
+<text class="st b" text-anchor="middle" x="18" y="34">
         上游算力
        </text>
-       <text class="st sm" text-anchor="middle" x="18" y="74">
+<text class="st sm" text-anchor="middle" x="18" y="74">
         价值高
        </text>
-       <text class="st" text-anchor="middle" x="150" y="164">
+<text class="st" text-anchor="middle" x="150" y="164">
         中游模型层
        </text>
-       <text class="st sm" fill="#C00000" text-anchor="middle" x="150" y="182">
+<text class="st sm" fill="#C00000" text-anchor="middle" x="150" y="182">
         价值被压缩
        </text>
-       <text class="st b" text-anchor="middle" x="282" y="34">
+<text class="st b" text-anchor="middle" x="282" y="34">
         最后一公里
        </text>
-       <text class="st sm" fill="#00A33A" text-anchor="middle" x="282" y="74">
+<text class="st sm" fill="#00A33A" text-anchor="middle" x="282" y="74">
         价值高·主战场
        </text>
-      </svg>
-     </div>
-     <div class="tcol">
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</svg>
+</div>
+<div class="tcol">
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         价值在微笑曲线两端，中间的模型层正在被商品化
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          上游算力和下游最后一公里捕获最多价值
         </li>
-        <li>
+<li>
          中游模型层趋同、打价格战，价值被压缩
         </li>
-        <li>
+<li>
          不拥有最后一公里的模型公司，最终只是 token 销售渠道
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         所以我们看三种人怎么抢这一公里，按资源从重到轻排
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          GC 机构级、OpenAI 与 Anthropic 联盟级、Ordo 单公司级
         </li>
-        <li>
+<li>
          共同点：都要直接下场运营，纯产品驱动的时刻还没到
         </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
+</ul>
+</div>
+</div>
+</div>
+<div class="note">
+<span class="note-l">
       口头补充
      </span>
      三种人分别是：资本（以 GC 为代表的机构投资人）、模型公司（OpenAI 和 Anthropic）、公司（Ordo 这类在一线运营的 portfolio 公司）。按资源从重到轻排。
     </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      3 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">3 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 4: Part 1 · GC | GC 的三个判断：押 16T 服务业、用 AI Rollup 改写运营、单点验证但未经周期 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 4: Part 1 · GC | GC 的三个判断：押 16T 服务业、用 AI Rollup 改写运营、单点验证但未经周期 ── --><section class="slide">
+<div class="eyebrow">
      Part 1 · GC
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       GC 的三个判断：押 16T 服务业、用 AI Rollup 改写运营、单点验证但未经周期
      </h2>
-    </div>
-    <ol class="logic-list">
-     <li>
+</div>
+<ol class="logic-list">
+<li>
       押的是
       <span class="hl">
        服务业
       </span>
       $16 万亿 蛋糕，不是软件——它是软件 TAM 的约 50 倍，但毛利率基本维持在 15%。（对比：OpenAI、Anthropic 的 JV 打法主要面向 IT/科技行业客户，两者赛道完全不同。）
      </li>
-     <li>
+<li>
       打法是 AI 改造的 Rollup：孵化或领投 → 锁定收购弹药 → 部署自研 AI 平台 → 平台级整合。
      </li>
-     <li>
+<li>
       选品两道筛子：量化甜区（30-70% 自动化、行业碎片化、低 churn）与软件盲区（最后一公里、物理世界、客情、跨国合规）。
      </li>
-     <li>
+<li>
       单点已验证（Crescendo 毛利 20%→60%、Long Lake 2 年做出 $1 亿 EBITDA）。
      </li>
-    </ol>
-    <div class="note">
-     <span class="note-l">
+</ol>
+<div class="note">
+<span class="note-l">
       口头补充
      </span>
      GC 赌的是服务业，模型公司 JV 赌的是 IT 行业——这是两种完全不同的落地方向，也是今天对照观察的核心维度。
     </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      4 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">4 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 5: Part 1 · GC | 服务业 TAM 是软件 50 倍，AI 第一次让它够得着软件级毛利 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 5: Part 1 · GC | 服务业 TAM 是软件 50 倍，AI 第一次让它够得着软件级毛利 ── --><section class="slide">
+<div class="eyebrow">
      Part 1 · GC
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       服务业 TAM 是软件 50 倍，AI 第一次让它够得着软件级毛利
      </h2>
-    </div>
-    <div class="body2 has-viz">
-     <div class="vcol">
-      <div class="vtt">
+</div>
+<div class="body2 has-viz">
+<div class="vcol">
+<div class="vtt">
        典型服务业成本结构
       </div>
-      <div class="sk">
-       <div class="sks" style="flex:65;background:#E2E8F0;border-left:4px solid #94A3B8">
-        <span>
+<div class="sk">
+<div class="sks" style="flex:65;background:#E2E8F0;border-left:4px solid #94A3B8">
+<span>
          人力 60-70%
         </span>
-       </div>
-       <div class="sks" style="flex:12;background:#DBEAFE;border-left:4px solid #00B0F0">
-        <span>
+</div>
+<div class="sks" style="flex:12;background:#DBEAFE;border-left:4px solid #00B0F0">
+<span>
          租金 10-15%
         </span>
-       </div>
-       <div class="sks" style="flex:5;background:#FEF3C7;border-left:4px solid #D9A300">
-        <span>
+</div>
+<div class="sks" style="flex:5;background:#FEF3C7;border-left:4px solid #D9A300">
+<span>
          技术 3-8%
         </span>
-       </div>
-       <div class="sks" style="flex:13;background:#D1FAE5;border-left:4px solid #00B050">
-        <span>
+</div>
+<div class="sks" style="flex:13;background:#D1FAE5;border-left:4px solid #00B050">
+<span>
          EBITDA 5-15%
         </span>
-       </div>
-      </div>
-      <div class="viz-cap">
+</div>
+</div>
+<div class="viz-cap">
        服务业是软件的约 50×，但 EBITDA 仅 5-15%
       </div>
-     </div>
-     <div class="tcol">
-      <div class="block" style="border-left-color:#00B0F0">
-       <div class="b-h" style="color:#00B0F0">
+</div>
+<div class="tcol">
+<div class="block" style="border-left-color:#00B0F0">
+<div class="b-h" style="color:#00B0F0">
         （1）先认识 GC：管着约 $430 亿的老牌 VC
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          2000 年 Joel Cutler 与 David Fialkow 在 Cambridge 创立，至今 26 年
         </li>
-        <li>
+<li>
          AUM &gt;
          <span class="hl">
           $430 亿
@@ -497,23 +490,23 @@ body{font-family:"Kaiti TC","Kaiti SC","STKaiti",Kaiti,"KaiTi",Arial,serif;color
          </span>
          新基金
         </li>
-        <li>
+<li>
          总部 Cambridge，团队 ~370-400 人；CEO Hemant Taneja（2021 独任），Chairman 是前 Amex CEO Ken Chenault
         </li>
-        <li>
+<li>
          代表 portfolio：Stripe、Airbnb、HubSpot、Snap、Anduril、Helsing、Ramp、Canva、Mistral、Anthropic
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         （2）为什么是服务业：市场体量大、原始毛利低、AI 首次打开规模渗透窗口
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          GC 在赌服务业，不是赌软件——核心是改造收购来的服务业公司，而不是投 AI 技术公司本身
         </li>
-        <li>
+<li>
          服务业 ~
          <span class="hl">
           $16 万亿
@@ -532,892 +525,708 @@ body{font-family:"Kaiti TC","Kaiti SC","STKaiti",Kaiti,"KaiTi",Arial,serif;color
          </span>
          （人力 60-70% 与产出线性挂钩）
         </li>
-        <li>
+<li>
          AI 第一次提供第三条路：同一拨人 + AI 之后做更多的事、或自动化高频低价值的长尾任务，边际成本第一次非线性
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B0F0">
-       <div class="b-h" style="color:#00B0F0">
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B0F0">
+<div class="b-h" style="color:#00B0F0">
         HATCo 是特例：GP 自有资金做医疗变革，不走主流 LP 路径
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          Health Assurance Transformation Company——GC CEO 从 2017 年起与 Intermountain Healthcare 对接，用 GC 自有资产负债表（非 LP 资金）专门做医疗系统 AI 化
         </li>
-        <li>
+<li>
          医疗属超长周期重运营，与 10 年期 VC 基金天然错配，因此独立于所有基金体系之外
         </li>
-        <li>
+<li>
          后续我们分享的主流路线是 Creation Fund——以 LP 资金为基础的 AI Rollup 打法
         </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
+</ul>
+</div>
+</div>
+</div>
+<div class="note">
+<span class="note-l">
       口头补充
      </span>
      HATCo 用 GP 自有资金亲自下场做医疗，是信念级下注，因为医疗超长期、重运营，与 10 年期 VC 基金天然错配。
     </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      5 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">5 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 6: Part 1 · GC | 卖工具进不了服务业，GC 靠 Rollup 让 Agent 接管真实 P&L ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 6: Part 1 · GC | 卖工具进不了服务业，GC 靠 Rollup 让 Agent 接管真实 P&L ── --><section class="slide">
+<div class="eyebrow">
      Part 1 · GC
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       卖工具进不了服务业，GC 靠 Rollup 让 Agent 接管真实 P&amp;L
      </h2>
-    </div>
-    <div class="body2 has-viz">
-     <div class="vcol">
-      <div class="stp">
-       <div class="sti">
-        <div class="stn">
+</div>
+<div class="body2 has-viz">
+<div class="vcol">
+<div class="stp">
+<div class="sti">
+<div class="stn">
          1
         </div>
-        <div class="stx">
+<div class="stx">
          孵化或领投 AI-native 团队
         </div>
-       </div>
-       <div class="stl">
-       </div>
-       <div class="sti">
-        <div class="stn">
+</div>
+<div class="stl">
+</div>
+<div class="sti">
+<div class="stn">
          2
         </div>
-        <div class="stx">
+<div class="stx">
          锁定收购专项资金 + veto
         </div>
-       </div>
-       <div class="stl">
-       </div>
-       <div class="sti">
-        <div class="stn">
+</div>
+<div class="stl">
+</div>
+<div class="sti">
+<div class="stn">
          3
         </div>
-        <div class="stx">
+<div class="stx">
          部署自研 AI 平台，自动化 30-40%
         </div>
-       </div>
-       <div class="stl">
-       </div>
-       <div class="sti">
-        <div class="stn">
+</div>
+<div class="stl">
+</div>
+<div class="sti">
+<div class="stn">
          4
         </div>
-        <div class="stx">
+<div class="stx">
          并购更大平台进一步扩张
         </div>
-       </div>
-      </div>
-     </div>
-     <div class="tcol">
-      <div class="block" style="border-left-color:#D9A300">
-       <div class="b-h" style="color:#D9A300">
+</div>
+</div>
+</div>
+<div class="tcol">
+<div class="block" style="border-left-color:#D9A300">
+<div class="b-h" style="color:#D9A300">
         一线 SaaS / toB AI founder 实证：客户内部商业阻力大于技术阻力
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          客户内部"谁推、谁担责、谁背锅"这三件事直接卡死部署，比工具本身的技术阻力更大
         </li>
-        <li>
+<li>
          GC 把公司买下来，等于一次性把这道商业阻力抹掉，Agent 直接接管真实工作流
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         Agent 的 PMF 只能在 in-house 的真实运营里才能证明，不是单纯的卖产品/工具
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          外部工具进不去；买下来 Agent 才能接管真实工作流，价值在真实 P&amp;L 体现
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         它和传统 Rollup 的本质区别是运营改造而非财务工程
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          传统 Rollup 买小做大、压供应商
         </li>
-        <li>
+<li>
          GC 每收一家，AI 平台固定成本摊薄，增量 margin 递增
         </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
+</ul>
+</div>
+</div>
+</div>
+<div class="note">
+<span class="note-l">
       口头补充
      </span>
      很多公司想切的是不性感的传统行业，AI 能 automate 老流程但 GTM 极难，Rollup 直接把 GTM 问题解决了。
     </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      6 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">6 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 7: Part 1 · GC | 三种出资结构让 GC 灵活拿到控制权，资源投入从重到轻 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 7: Part 1 · GC | 三种出资结构让 GC 灵活拿到控制权，资源投入从重到轻 ── --><section class="slide">
+<div class="eyebrow">
      Part 1 · GC
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       三种出资结构让 GC 灵活拿到控制权，资源投入从重到轻
      </h2>
-    </div>
-    <div class="grid" style="grid-template-columns:repeat(3,1fr)">
-     <div class="block" style="border-left-color:#00B050">
-      <div class="b-h" style="color:#00B050">
+</div>
+<div class="grid" style="grid-template-columns:repeat(3,1fr)">
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
        结构一：孵化控制型（持股 40-60%）
       </div>
-      <ul class="b-ev">
-       <li>
+<ul class="b-ev">
+<li>
         GC 以联合创始人身份进入，早期持股 40-60%，绝对多数股权即构成收购控制，无需单独设 veto 条款
        </li>
-       <li>
+<li>
         融资与首笔收购同日宣布，运营资金与收购弹药不作区分
        </li>
-       <li>
+<li>
         代表案例：Crescendo（完全孵化，GC 全程主导）
        </li>
-      </ul>
-     </div>
-     <div class="block" style="border-left-color:#00B050">
-      <div class="b-h" style="color:#00B050">
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
        结构二：领投 + Earmarked + 合同 veto（持股 25-40%）
       </div>
-      <ul class="b-ev">
-       <li>
+<ul class="b-ev">
+<li>
         Term sheet 明确拆分运营资金与收购专项资金（earmarked），合同层面赋予 GC 对并购决策的一票否决权（veto）
        </li>
-       <li>
+<li>
         持股比例相对较低，通过合同机制保持实质控制
        </li>
-       <li>
+<li>
         代表案例：Long Lake（领投 + veto 模式）
        </li>
-      </ul>
-     </div>
-     <div class="block" style="border-left-color:#D9A300">
-      <div class="b-h" style="color:#D9A300">
+</ul>
+</div>
+<div class="block" style="border-left-color:#D9A300">
+<div class="b-h" style="color:#D9A300">
        结构三：股权 + 专项收购债（持股低，靠董事会控制）
       </div>
-      <ul class="b-ev">
-       <li>
+<ul class="b-ev">
+<li>
         GC 仅出股权，并购专项资金由独立债务方（成长期信贷机构）提供，两段资金完全分离
        </li>
-       <li>
+<li>
         杠杆更高，GC 股权出资更小，通过持股比例和董事会席位维持控制
        </li>
-       <li>
+<li>
         代表案例：Dwelly（£32M 股权 + £37M Trinity Capital 专项收购债）
        </li>
-      </ul>
-     </div>
-    </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+</ul>
+</div>
+</div>
+<table class="tbl" style="margin-top:1.2rem;font-size:0.80em">
+<thead><tr>
+<th>维度</th><th>结构一：孵化控制型</th><th>结构二：领投+Earmarked+Veto</th><th>结构三：股权+专项收购债</th>
+</tr></thead>
+<tbody>
+<tr><td>持股比例</td><td><b>40–60%</b>（绝对多数）</td><td><b>25–40%</b></td><td>较低（靠合同机制）</td></tr>
+<tr><td>控制机制</td><td>股权即控制，无需veto</td><td>合同层面一票否决权</td><td>董事会席位</td></tr>
+<tr><td>收购资金来源</td><td>融资与收购同日，不分拆</td><td>Term sheet明确earmarked专项</td><td>独立债务方（成长期信贷机构）</td></tr>
+<tr><td>杠杆程度</td><td>中</td><td>中高</td><td>高</td></tr>
+<tr><td>代表案例</td><td>Crescendo</td><td>Long Lake</td><td>Dwelly</td></tr>
+</tbody></table><div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      7 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">7 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 8: Part 1 · GC | GC 选品：量化甜区里挑软件盲区 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 8: Part 1 · GC | GC 选品：量化甜区里挑软件盲区 ── --><section class="slide">
+<div class="eyebrow">
      Part 1 · GC
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       GC 选品：量化甜区里挑软件盲区
      </h2>
-    </div>
-    <div class="body2 has-viz">
-     <div class="vcol">
-      <div class="vtt">
+</div>
+<div class="body2 has-viz">
+<div class="vcol">
+<div class="vtt">
        选品的两套标准
       </div>
-      <div class="tl">
-       <div class="tlg">
-        <div class="tlh">
+<div class="tl">
+<div class="tlg">
+<div class="tlh">
          量化边界（三选一缺一不可）
         </div>
-        <ul class="tll">
-         <li>
+<ul class="tll">
+<li>
           自动化甜区 30-70%
          </li>
-         <li>
+<li>
           行业极度碎片化
          </li>
-         <li>
+<li>
           客户粘性高、低 churn
          </li>
-        </ul>
-       </div>
-       <div class="tlg">
-        <div class="tlh">
+</ul>
+</div>
+<div class="tlg">
+<div class="tlh">
          软件进不去的地方（四个维度）
         </div>
-        <ul class="tll">
-         <li>
+<ul class="tll">
+<li>
           最后一公里接触点
          </li>
-         <li>
+<li>
           物理世界环节
          </li>
-         <li>
+<li>
           客情关系仍是护城河
          </li>
-         <li>
+<li>
           跨国合规壁垒
          </li>
-        </ul>
-       </div>
-      </div>
-     </div>
-     <div class="tcol">
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div>
+</div>
+</div>
+<div class="tcol">
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         先用三个量化维度划出可落地边界
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          自动化甜区 30-70%
         </li>
-        <li>
+<li>
          行业极度碎片化，AI 平台摊薄效应强
         </li>
-        <li>
+<li>
          客户粘性高、低 churn
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         再用四个新维度，专门找软件进不去的地方
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          最后一公里接触点
         </li>
-        <li>
+<li>
          物理世界纯软件颠覆不了
         </li>
-        <li>
+<li>
          效率可 10× 但客情关系仍重要
         </li>
-        <li>
+<li>
          跨国合规壁垒
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         能被 AI 吃掉的是四类高频任务
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          客服沟通、数据录入、内容生成、早期推理
         </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
+</ul>
+</div>
+</div>
+</div>
+<div class="note">
+<span class="note-l">
       口头补充
      </span>
      中美不能直接平移：可平移的是物业、会计税务、CX；窗口已关或结构不同的是金融 MSP、住宅租赁、企业差旅；法律服务按结果付费在中国仍有下沉空间，没完全关。
     </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      8 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">8 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 9: Part 1 · GC | Crescendo 与 Long Lake 是目前两个最成熟的验证案例 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 9: Part 1 · GC | GC Creation Fund 旗下七大案例，Crescendo 与 Long Lake 是最成熟的验证 ── --><section class="slide">
+<div class="eyebrow">
      Part 1 · GC
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
-      Crescendo 与 Long Lake 是目前两个最成熟的验证案例
-     </h2>
-    </div>
-    <table class="tbl">
-     <thead>
-      <tr>
-       <th>
-        指标
-       </th>
-       <th>
-        Crescendo
-       </th>
-       <th>
-        Long Lake
-       </th>
-      </tr>
-     </thead>
-     <tbody>
-      <tr>
-       <td>
-        品类
-       </td>
-       <td>
-        AI-native 客服 BPO（CX）
-       </td>
-       <td>
-        物业管理 → 差旅管理 Rollup
-       </td>
-      </tr>
-      <tr>
-       <td>
-        目标市场规模
-       </td>
-       <td>
-        全球 CX 外包 ~$1,000 亿/年
-       </td>
-       <td>
-        美国 HOA 管理 ~$100-150 亿/年
-       </td>
-      </tr>
-      <tr>
-       <td>
-        传统 Margin
-       </td>
-       <td>
-        毛利 20-25%
-       </td>
-       <td>
-        EBITDA 8-15%
-       </td>
-      </tr>
-      <tr>
-       <td>
-        AI 改造后 Margin
-       </td>
-       <td>
-        毛利 60-65%
-       </td>
-       <td>
-        EBITDA $1 亿（不到 2 年）
-       </td>
-      </tr>
-      <tr>
-       <td>
-        自动化率
-       </td>
-       <td>
-        Tier-1 工单 90%+ 由 AI 处理
-       </td>
-       <td>
-        90%（单任务）
-       </td>
-      </tr>
-      <tr>
-       <td>
-        营收 / 规模
-       </td>
-       <td>
-        ARR &gt;$1 亿；估值 $5 亿
-       </td>
-       <td>
-        30+ 家收购；2026 以 $63 亿购 Amex GBT
-       </td>
-      </tr>
-      <tr>
-       <td>
-        GC 控制结构
-       </td>
-       <td>
-        孵化控制型，持股约 40-60%
-       </td>
-       <td>
-        领投 + earmarked + veto，持股约 25-40%
-       </td>
-      </tr>
-     </tbody>
-    </table>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">GC Creation Fund 旗下七大案例，Crescendo 与 Long Lake 是最成熟的验证</h2>
+</div>
+<table class="tbl" style="font-size:0.77em">
+<thead><tr>
+<th>公司</th><th>品类</th><th>传统Margin</th><th>AI改造后</th><th>自动化率</th><th>当前阶段</th>
+</tr></thead>
+<tbody>
+<tr style="background:#F0FAF0"><td><b>Crescendo ★</b></td><td>CX 客服 BPO</td><td>毛利 20–25%</td><td><b>毛利 60–65%</b>，ARR &gt;$1亿，估值$5亿</td><td>Tier-1工单 <b>90%+</b></td><td>最成熟，已验证</td></tr>
+<tr style="background:#F0FAF0"><td><b>Long Lake ★</b></td><td>物业管理→差旅 Rollup</td><td>EBITDA 8–15%</td><td><b>$1亿EBITDA</b>（&lt;2年），$63亿购Amex GBT</td><td>单任务 <b>90%</b></td><td>最成熟，规模最大</td></tr>
+<tr><td>Titan</td><td>金融IT托管（MSP）</td><td>净利 10–20%</td><td>净利翻3倍（预测）</td><td>38%（Pilot）</td><td>早期，无实证margin</td></tr>
+<tr><td>Eudia</td><td>企业法律服务（ALSP）</td><td>EBITDA 15–25%</td><td>周期时间 -90%</td><td>90%（周期压缩）</td><td>收购整合中</td></tr>
+<tr><td>Accrual</td><td>会计/税务事务所</td><td>EBITDA 15–30%</td><td>备税时间 -85%</td><td>未披露</td><td>最早期，Rollup未启动</td></tr>
+<tr><td>Dwelly</td><td>英国住宅租赁中介</td><td>未披露</td><td>—</td><td>—</td><td>早期</td></tr>
+<tr><td>Hippocratic AI</td><td>医疗AI Agent（例外）</td><td>—</td><td>估值 $35亿（Series C）</td><td>—</td><td>近传统跟投，GC控制力弱</td></tr>
+</tbody></table>
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      9 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">9 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 10: Part 1 · GC | Crescendo 证明利润上限，Long Lake 证明规模上限 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 10: Part 1 · GC | Crescendo 证明利润上限，Long Lake 证明规模上限 ── --><section class="slide">
+<div class="eyebrow">
      Part 1 · GC
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       Crescendo 证明利润上限，Long Lake 证明规模上限
      </h2>
-    </div>
-    <div class="body2 has-viz">
-     <div class="vcol">
-      <div class="ba">
-       <div class="bar">
-        <div class="bal">
+</div>
+<div class="body2 has-viz">
+<div class="vcol">
+<div class="ba">
+<div class="bar">
+<div class="bal">
          Crescendo 毛利
         </div>
-        <div class="baf">
+<div class="baf">
          20-25%
         </div>
-        <div class="baa" style="color:#00B050">
+<div class="baa" style="color:#00B050">
          ↑
         </div>
-        <div class="bat" style="color:#00B050;border-color:#00B050">
+<div class="bat" style="color:#00B050;border-color:#00B050">
          60-65%
         </div>
-       </div>
-       <div class="bar">
-        <div class="bal">
+</div>
+<div class="bar">
+<div class="bal">
          Amex GBT margin
         </div>
-        <div class="baf">
+<div class="baf">
          19%
         </div>
-        <div class="baa" style="color:#00B050">
+<div class="baa" style="color:#00B050">
          ↑
         </div>
-        <div class="bat" style="color:#00B050;border-color:#00B050">
+<div class="bat" style="color:#00B050;border-color:#00B050">
          35-40%
         </div>
-       </div>
-       <div class="bar">
-        <div class="bal">
+</div>
+<div class="bar">
+<div class="bal">
          Long Lake EBITDA
         </div>
-        <div class="baf">
+<div class="baf">
          起步
         </div>
-        <div class="baa" style="color:#00B050">
+<div class="baa" style="color:#00B050">
          ↑
         </div>
-        <div class="bat" style="color:#00B050;border-color:#00B050">
+<div class="bat" style="color:#00B050;border-color:#00B050">
          $1 亿
         </div>
-       </div>
-      </div>
-      <div class="viz-cap">
+</div>
+</div>
+<div class="viz-cap">
        一个拉 margin，一个做大规模
       </div>
-     </div>
-     <div class="tcol">
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</div>
+<div class="tcol">
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         Crescendo = AI-native 客服 BPO，证明 margin 能拉到软件级
        </div>
-       <ul class="b-ev">
-        <li>
-         主业：替代传统呼叫中心，Tier-1 工单 90%+ 由 AI 处理，人工只兜底
-        </li>
-        <li>
-         交互成本 $0.5-0.75 vs 人工 $3.5；毛利
-         <span class="hl">
-          20-25% → 60-65%
-         </span>
-         ，ARR 超 $1 亿，估值 $5 亿
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+<ul class="b-ev"><li>Series C (2024/10) → ARR 破 $1亿 (2025/9) 仅 11 个月；Tier-1工单 <span class="hl">90%+</span> 由 AI 处理，人工只兜底</li><li>交互成本 $0.5–0.75 vs 人工 $3.5；毛利 <span class="hl">20–25% → 60–65%</span>，多语言多渠道全覆盖；估值 $5亿</li><li>不是"BPO + AI 迭代"，而是从第一天起按软件级 margin 设计——AI 直接接管，成本结构与传统 BPO 完全不同</li></ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         Long Lake = HOA 物业 Rollup，证明碎片化起点能做到百亿级
        </div>
-       <ul class="b-ev">
-        <li>
-         主业：起家于美国 HOA（业主委员会）物业管理，靠 AI 平台连续收购整合 30+ 家
-        </li>
-        <li>
-         不到 2 年做出
-         <span class="hl">
-          $1 亿 EBITDA
-         </span>
-         ；2026 以
-         <span class="hl">
-          $63 亿
-         </span>
-         收购 Amex GBT，押注 margin 拉到
-         <span class="hl">
-          35-40%
-         </span>
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+<ul class="b-ev"><li>2023年底开始批量收购 HOA 管理公司；至 2025年中累计 <span class="hl">$1亿 EBITDA</span>，时间窗口约 18–24 个月</li><li>2026年以 <span class="hl">$63亿</span>（$9.50/股，溢价60.2%；债务$25B+权益~$38B）收购 Amex GBT（FY2025收入$27.18亿，EBITDA margin 19%）</li><li>Nexus AI 平台统一后台（会议PPT 10h→1h，报修跟踪，财务报告自动化）；目标 margin <span class="hl">19% → 35–40%</span>；Amex GBT 整合是整个逻辑的最终压力测试</li></ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         两个合起来就是 Creation Fund 的完整逻辑
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          对应 $15 亿 Creation Fund 的两步：先拉 margin（Crescendo 路径）、再做大规模（Long Lake 路径）
         </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
+</ul>
+</div>
+</div>
+</div>
+<div class="note">
+<span class="note-l">
       口头补充
      </span>
      分润结构：Crescendo 走孵化控制型，GC 持股 40-60% 拿绝对多数；Long Lake 走领投+earmarked+veto，GC 持股 25-40% 靠合同控盘；Amex GBT 是全现金 $9.50/股、溢价 60.2%、债务 $25 亿+权益 ~$38 亿。增值由 GC + 管理团队按股权 + AI 平台分摊。Amex GBT 整合（可能 2027 年财报）是整个理论是否成立的最终压力测试。
     </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      10 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">10 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 11: Part 2 · OpenAI & Anthropic | 模型公司被同一压力推下场，JV-FDE（Joint Venture + Frontline Deploymen ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 11: Part 2 · OpenAI & Anthropic | 模型公司被同一压力推下场，JV-FDE（Joint Venture + Frontline Deploymen ── --><section class="slide">
+<div class="eyebrow">
      Part 2 · OpenAI &amp; Anthropic
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       模型公司被同一压力推下场，JV-FDE（Joint Venture + Frontline Deployment Engineer）是新主流，但外壳同、本质是 20-40% 服务生意
      </h2>
-    </div>
-    <ol class="logic-list">
-     <li>
+</div>
+<ol class="logic-list">
+<li>
       OpenAI 与 Anthropic 在同一周分别官宣 DeployCo 和 JV，被算力账单与模型层商品化挤进最后一公里。
      </li>
-     <li>
+<li>
       两家外壳几乎相同（模型 + FDE（Frontline Deployment Engineer，前线部署工程师）+ PE 合资 + 收购百到两百人级科技转型公司），内核差异在控制权与经济分配
      </li>
-     <li>
+<li>
       本质是 20-40% 毛利的服务生意，Palantir 是唯一走通样本，仍亏了约 19 年——产品化没走通前毛利上不去。
      </li>
-    </ol>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+</ol>
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      11 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">11 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 12: Part 2 · OpenAI & Anthropic | 同一周、同一套打法，模型公司被逼集体转向最后一公里 ── -->
-   <section class="slide">
-    <div class="eyebrow">
-     Part 2 · OpenAI &amp; Anthropic
-    </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
-      同一周、同一套打法，模型公司被逼集体转向最后一公里
-     </h2>
-    </div>
-    <div class="body2 has-viz">
-     <div class="vcol">
-      <div class="vb">
-       <div class="vbc">
-        <div class="vbv">
+</div>
+</section>
+
+<!-- ── Slide 12: Part 2 · OpenAI & Anthropic | 同一周、同一套打法，模型公司被逼集体转向最后一公里 ── --><section class="slide"><div class="eyebrow">Part 2 · OpenAI &amp; Anthropic</div><div class="title-row"><div class="tbar"></div><h2 class="title">同一周、同一套打法，模型公司被逼集体转向最后一公里</h2></div><div class="body2 has-viz"><div class="vcol">
+<div class="vb">
+<div class="vbc">
+<div class="vbv">
          $40 亿
         </div>
-        <div class="vbb" style="height:150px;background:#00B0F0">
-        </div>
-        <div class="vbl">
+<div class="vbb" style="height:150px;background:#00B0F0">
+</div>
+<div class="vbl">
          OpenAI DeployCo
         </div>
-       </div>
-       <div class="vbc">
-        <div class="vbv">
+</div>
+<div class="vbc">
+<div class="vbv">
          约 $15 亿
         </div>
-        <div class="vbb" style="height:56px;background:#00B050">
-        </div>
-        <div class="vbl">
+<div class="vbb" style="height:56px;background:#00B050">
+</div>
+<div class="vbl">
          Anthropic JV
         </div>
-       </div>
-      </div>
-      <div class="viz-cap">
+</div>
+</div>
+<div class="viz-cap">
        两笔 JV 同周官宣，量级却差很多
       </div>
-     </div>
-     <div class="tcol">
-      <div class="block" style="border-left-color:#00B0F0">
-       <div class="b-h" style="color:#00B0F0">
+</div><div class="tcol"><div class="block" style="border-left-color:#00B0F0">
+<div class="b-h" style="color:#00B0F0">
         两句话先把 JV 说清楚
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          2025 下半年同一周内，OpenAI 联合 TPG 等 19 家 PE 组建 DeployCo，Anthropic 联合 Blackstone、H&amp;F、Goldman 等组建 JV
         </li>
-        <li>
+<li>
          核心不再是卖 API，而是派 FDE 驻场到 PE portfolio 公司，亲自做企业内部的 AI 部署
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div><div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         OpenAI 侧组了一个大杠杆 JV
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          TPG 领投 19 家 PE，募约 $40 亿，OpenAI 仅出 $5 亿
         </li>
-        <li>
+<li>
          PE 拿 17.5%/5 年保底，OpenAI 多数股权 + 超级投票权
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div><div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         Anthropic 侧组了一个更轻的 JV
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          与 Blackstone、H&amp;F、Goldman 等约 $15 亿，无披露保底
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div><div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         同周、同结构——但目标市场与 GC 截然不同：IT/科技行业，而非服务业
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          共识：必须在 12-18 个月内把 enterprise revenue 跑起来，否则模型层商品化吞掉估值故事
         </li>
-        <li>
+<li>
          关键区别：OpenAI/Anthropic JV 的客户是 IT/科技企业内部系统升级；GC 押注的是人力密集型服务业的运营改造——两者赛道完全不同
         </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
-      口头补充
-     </span>
-     和 GC 是同一母题的两个版本：GC 从外部孵化收购垂类，模型公司从模型层往下游亲自下场。
-    </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
-        HONGSHAN
-       </div>
-       <div class="ft-zh">
-        红杉科创平台
-       </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      12 / 24
-     </div>
-     <div class="ft-tag">
-      From lab to industry and beyond
-     </div>
-    </div>
-   </section>
-   <!-- ── Slide 13: Part 2 · OpenAI & Anthropic | 外壳几乎相同执行天差地别——本质是20-40%毛利的服务生意 ── -->
-   <section class="slide">
-    <div class="eyebrow">
-     Part 2 · OpenAI &amp; Anthropic
-    </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
-      外壳几乎相同执行天差地别——本质是20-40%毛利的服务生意
-     </h2>
-    </div>
-    <div class="body2 has-viz">
-     <div class="vcol" style="flex:0 0 57%;overflow-y:auto">
-      <div class="vtt">
-       六个维度对照
-      </div>
-      <table class="vtbl">
-       <thead>
-        <tr>
-         <th>
+</ul>
+</div><div class="block" style="border-left-color:#00B050"><div class="b-h" style="color:#00B050">外壳同，执行上是两种完全不同的机器</div><ul class="b-ev"><li>OpenAI：高估值、带 <span class="hl">17.5%</span> 保底、自己控盘的杠杆扩张机器</li><li>Anthropic：轻量、无保底、四方均衡——Blackstone / H&amp;F / Anthropic 各 $3亿 + Goldman $1.5亿，无单一控制方</li></ul></div></div></div><div class="note"><span class="note-l">口头补充</span>和 GC 是同一母题的两个版本：GC 从外部孵化收购垂类，模型公司从模型层往下游亲自下场。差异根源是算力压力不同，不是谁强谁弱。</div><div class="ft"><div class="ft-logo"><div class="ft-logo-tx"><div class="ft-h">HONGSHAN</div><div class="ft-zh">红杉科创平台</div></div><svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32"><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27"></line><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27"></line></svg></div><div class="ft-no">12 / 23</div><div class="ft-tag">From lab to industry and beyond</div></div></section><!-- ── Slide 13: Part 2 · OpenAI & Anthropic | 外壳几乎相同执行天差地别，本质是 20-40% 毛利服务生意，OpenAI 用保底对赌产品化 ── --><section class="slide"><div class="eyebrow">Part 2 · OpenAI &amp; Anthropic</div><div class="title-row"><div class="tbar"></div><h2 class="title">外壳几乎相同执行天差地别，本质是 20-40% 毛利服务生意，OpenAI 用保底对赌产品化</h2></div><div class="body2 has-viz"><div class="vcol" style="flex:0 0 55%;overflow-y:auto;padding-right:0.8rem"><div class="vtt">六个维度对照</div><table class="vtbl">
+<thead>
+<tr>
+<th>
           维度
          </th>
-         <th>
+<th>
           OpenAI DeployCo
          </th>
-         <th>
+<th>
           Anthropic JV
          </th>
-        </tr>
-       </thead>
-       <tbody>
-        <tr>
-         <td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
           募资规模
          </td>
-         <td>
+<td>
           约
           <span class="hl">
            $40 亿
@@ -1426,8 +1235,8 @@ body{font-family:"Kaiti TC","Kaiti SC","STKaiti",Kaiti,"KaiTi",Arial,serif;color
           <span class="hl">
            $5 亿
           </span>
-         </td>
-         <td>
+</td>
+<td>
           约
           <span class="hl">
            $15 亿
@@ -1436,580 +1245,154 @@ body{font-family:"Kaiti TC","Kaiti SC","STKaiti",Kaiti,"KaiTi",Arial,serif;color
           <span class="hl">
            $10.5 亿
           </span>
-         </td>
-        </tr>
-        <tr>
-         <td>
+</td>
+</tr>
+<tr>
+<td>
           保底机制
          </td>
-         <td>
-          <span class="hl">
+<td>
+<span class="hl">
            17.5% / 5 年最低回报
           </span>
-         </td>
-         <td>
+</td>
+<td>
           无披露保底
          </td>
-        </tr>
-        <tr>
-         <td>
+</tr>
+<tr>
+<td>
           控制结构
          </td>
-         <td>
+<td>
           OpenAI 多数股权 + 超级投票权
          </td>
-         <td>
+<td>
           独立实体，四方均衡，
           <span class="hl">
            无单一控制方
           </span>
-         </td>
-        </tr>
-        <tr>
-         <td>
+</td>
+</tr>
+<tr>
+<td>
           首笔收购公司
          </td>
-         <td>
+<td>
           Tomoro（约 150 FDE）
          </td>
-         <td>
+<td>
           Fractional AI（约 44-100 人）
          </td>
-        </tr>
-        <tr>
-         <td>
+</tr>
+<tr>
+<td>
           被收购公司团队
          </td>
-         <td>
+<td>
           来自 Accenture/Mudano/Lloyds/EY
          </td>
-         <td>
+<td>
           创始人均出自 LiveRamp
          </td>
-        </tr>
-        <tr>
-         <td>
+</tr>
+<tr>
+<td>
           被收购公司行业切入
          </td>
-         <td>
+<td>
           大型消费品 CX 自动化（Supercell 5 款游戏、1.1 亿用户、12 周上线、支持成本降 90%）
          </td>
-         <td>
+<td>
           Data infra / 营销分析
          </td>
-        </tr>
-        <tr>
-         <td>
+</tr>
+<tr>
+<td>
           本质定位
          </td>
-         <td>
+<td>
           杠杆扩张机器
          </td>
-         <td>
+<td>
           咨询替代实验
          </td>
-        </tr>
-       </tbody>
-      </table>
-      <div class="viz-cap">
-       外壳同、执行是两种机器
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
-        两笔交易的外壳确实一样
-       </div>
-       <ul class="b-ev">
-        <li>
-         都是 PE 合资 + FDE 驻场，都以收购百到两百人级科技转型公司起步
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
-        但执行上是两种完全不同的机器
-       </div>
-       <ul class="b-ev">
-        <li>
-         OpenAI 是高估值、带
-         <span class="hl">
-          17.5%
-         </span>
-         保底、自己控盘的杠杆型扩张机器
-        </li>
-        <li>
-         Anthropic 是轻量、无保底、四方均衡的咨询替代实验
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
-        差异根源是算力压力不同，不是谁强谁弱
-       </div>
-       <ul class="b-ev">
-        <li>
-         OpenAI 算力义务远超收入，被迫用保底换 PE 现金；Anthropic 算力覆盖更好，不需要这一招
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#D9A300">
-       <div class="b-h" style="color:#D9A300">
-        Anthropic 这边谁说了算？没人说了算
-       </div>
-       <ul class="b-ev">
-        <li>
-         创始档 $10.5 亿由 Blackstone / H&amp;F / Anthropic 各 $3 亿 + Goldman $1.5 亿构成，缺口由 GA/Leonard Green/Apollo/GIC/Sequoia 补足
-        </li>
-        <li>
-         Anthropic 自身只占总额约 20%，是合资式实验，不是 Anthropic 一家主导
-        </li>
-       </ul>
-      </div>
-     </div>
-     <div class="tcol" style="overflow-y:auto">
-      <div class="vtt">
-       单合同经济学三档
-      </div>
-      <div class="tl">
-       <div class="tlg">
-        <div class="tlh">
-         按合同规模算账（FDE 服务）
-        </div>
-        <ul class="tll">
-         <li>
-          $50 万 / 3 人：毛利为负
-         </li>
-         <li>
-          $150 万 / 4 人：约
-          <span class="hl">
-           20%
-          </span>
-          ，需并行两个项目
-         </li>
-         <li>
-          $300 万 / 4 人：约
-          <span class="hl">
-           47%
-          </span>
-          ，养得起 $30 万工程师
-         </li>
-        </ul>
-       </div>
-       <div class="tlg">
-        <div class="tlh">
-         放大到 JV 兑现保底
-        </div>
-        <ul class="tll">
-         <li>
-          覆盖 $40 亿的 17.5%，需约
-          <span class="hl">
-           $47 亿
-          </span>
-          年收入
-         </li>
-         <li>
-          对应约 3100 个并行项目、数千 FDE
-         </li>
-         <li>
-          Tomoro 起点仅 150 人
-         </li>
-        </ul>
-       </div>
-      </div>
-      <div class="viz-cap">
-       单合同经济学三档
-      </div>
-      <div class="block" style="border-left-color:#00B0F0">
-       <div class="b-h" style="color:#00B0F0">
-        先说数字怎么来的：FDE 服务三档单合同利润
-       </div>
-       <ul class="b-ev">
-        <li>
-         数据源：Tomoro 等公开合同对价 + OpenAI/Anthropic JV 募资披露 + Palantir 上市后财报
-        </li>
-        <li>
-         按 FDE 人均成本约 $30 万 / 年逆推：$50 万合同负毛利、$150 万 ~20%、$300 万 ~47%
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#C00000">
-       <div class="b-h" style="color:#C00000">
-        放大到 JV 层面，兑现保底极难
-       </div>
-       <ul class="b-ev">
-        <li>
-         覆盖 $40 亿的
-         <span class="hl">
-          17.5%
-         </span>
-         需约 $47 亿年收入
-        </li>
-        <li>
-         约 3100 个并行项目、数千 FDE，远超 Tomoro 的 150 人
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
-        唯一走通样本是 Palantir，且极漫长
-       </div>
-       <ul class="b-ev">
-        <li>
-         唯一把 FDE 做成
-         <span class="hl">
-          80%+ 软件毛利
-         </span>
-         ，但亏损约 19 年
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
-        而模型层在快速商品化，逼它必须下沉
-       </div>
-       <ul class="b-ev">
-        <li>
-         前沿输出价格三年降
-         <span class="hl">
-          94.5%
-         </span>
-         ；DeepSeek R1 按约 1/27 价供给
-        </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
-      口头补充
-     </span>
-     Fractional AI 被 Anthropic 收购前与 OpenAI 有约 11 个月合作、被并入后直接终止，是 talent war 信号。 | 走通软件利润率要同时满足：交付沉淀为标准产品、工程师转产品杠杆、模型与工具链作隐性补贴。数字来源：Tomoro 报价 + JV 募资文件 + Palantir 年报。
-    </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
-        HONGSHAN
-       </div>
-       <div class="ft-zh">
-        红杉科创平台
-       </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      13 / 24
-     </div>
-     <div class="ft-tag">
-      From lab to industry and beyond
-     </div>
-    </div>
-   </section>
-   <!-- ── Slide 14: Part 2 · OpenAI & Anthropic | 既然是 20-40% 服务生意，OpenAI 只能用 17.5% 保底对赌产品化未来 ── -->
-   <section class="slide">
-    <div class="eyebrow">
-     Part 2 · OpenAI &amp; Anthropic
-    </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
-      既然是 20-40% 服务生意，OpenAI 只能用 17.5% 保底对赌产品化未来
-     </h2>
-    </div>
-    <div class="body2 has-viz">
-     <div class="vcol">
-      <div class="vb">
-       <div class="vbc">
-        <div class="vbv">
+</tr>
+</tbody>
+</table><div class="viz-cap">外壳同、执行是两种机器</div><div class="block" style="border-left-color:#00B050"><div class="b-h" style="color:#00B050">两笔交易的外壳确实一样</div><ul class="b-ev"><li>都是 PE 合资 + FDE 驻场，都以收购百到两百人级科技转型公司起步</li></ul></div><div class="block" style="border-left-color:#C00000"><div class="b-h" style="color:#C00000">本质是 20-40% 毛利的服务生意，不是软件</div><ul class="b-ev"><li>FDE 单合同三档：$50万/3人负毛利；$150万/4人约 <span class="hl">20%</span>；$300万/4人约 <span class="hl">47%</span></li><li>唯一走通软件毛利的样本是 Palantir，亏损约 <span class="hl">19年</span></li></ul></div></div><div class="tcol" style="overflow-y:auto"><div class="vtt">OpenAI 算力缺口</div><div class="vb">
+<div class="vbc">
+<div class="vbv">
          $1.4万亿
         </div>
-        <div class="vbb" style="height:150px;background:#C00000">
-        </div>
-        <div class="vbl">
+<div class="vbb" style="height:150px;background:#C00000">
+</div>
+<div class="vbl">
          已签 8 年硬合同
         </div>
-       </div>
-       <div class="vbc">
-        <div class="vbv">
+</div>
+<div class="vbc">
+<div class="vbv">
          ~$165亿
         </div>
-        <div class="vbb" style="height:8px;background:#94A3B8">
-        </div>
-        <div class="vbl">
+<div class="vbb" style="height:8px;background:#94A3B8">
+</div>
+<div class="vbl">
          2025年收入
         </div>
-       </div>
-      </div>
-      <div class="viz-cap">
-       已签硬合同未来 8 年要付 $1.4 万亿，2025 收入仅约 $165 亿
-      </div>
-     </div>
-     <div class="tcol">
-      <div class="block" style="border-left-color:#00B0F0">
-       <div class="b-h" style="color:#00B0F0">
-        先把'缺口'说清楚：这些都是必须按期付的硬合同，不是年度框架
-       </div>
-       <ul class="b-ev">
-        <li>
-         OpenAI 已经和 Broadcom / Oracle / Microsoft 等签了
-         <span class="hl">
-          多年期算力购买承诺
-         </span>
-         ，法律上必须按合同支付，用不用得完都得付钱
-        </li>
-        <li>
-         8 年累计承诺约
-         <span class="hl">
-          $1.4 万亿
-         </span>
-         （下调口径 2030 约 $6000 亿）；2025 实际收入仅
-         <span class="hl">
-          $130-200 亿
-         </span>
-         ，年度义务数倍于当年收入
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
-        缺口由一堆已签的硬承诺堆出来
-       </div>
-       <ul class="b-ev">
-        <li>
-         Broadcom $3500 亿、Oracle $3000 亿、Azure $2500 亿
-        </li>
-        <li>
-         Nvidia $1000 亿、AMD $900 亿、AWS $380 亿、CoreWeave $224 亿
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#C00000">
-       <div class="b-h" style="color:#C00000">
-        所以只能用未来对冲今天，做这笔 JV
-       </div>
-       <ul class="b-ev">
-        <li>
-         缺口逼它在 IPO 外尽快引入外部现金、锁住企业收入，才愿意给 PE 兜底
-         <span class="hl">
-          17.5%
-         </span>
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#D9A300">
-       <div class="b-h" style="color:#D9A300">
-        还不上就用未来的东西兑付
-       </div>
-       <ul class="b-ev">
-        <li>
-         IPO 后用股票还（隐性可转债），或用 token credit 抵债
-        </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
-      口头补充
-     </span>
-     内部预测 2026 亏约 $140 亿、到 2029 累计亏约 $1150 亿；PE 拿优先股加下行保护，说明它对烧钱有戒心。
-    </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
-        HONGSHAN
-       </div>
-       <div class="ft-zh">
-        红杉科创平台
-       </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      14 / 24
-     </div>
-     <div class="ft-tag">
-      From lab to industry and beyond
-     </div>
-    </div>
-   </section>
-   <!-- ── Slide 15: Part 2 · OpenAI & Anthropic | OpenAI DeployCo vs Anthropic JV ── -->
-   <section class="slide">
-    <div class="eyebrow">
-     Part 2 · OpenAI &amp; Anthropic
-    </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
-      OpenAI DeployCo vs Anthropic JV
-     </h2>
-    </div>
-    <table class="tbl">
-     <thead>
-      <tr>
-       <th>
-        维度
-       </th>
-       <th>
-        OpenAI DeployCo
-       </th>
-       <th>
-        Anthropic JV
-       </th>
-      </tr>
-     </thead>
-     <tbody>
-      <tr>
-       <td>
-        出资
-       </td>
-       <td>
-        约 $40 亿，自出 $5 亿，TPG 领投 19 家
-       </td>
-       <td>
-        约 $15 亿，创始档约 $10.5 亿
-       </td>
-      </tr>
-      <tr>
-       <td>
-        估值
-       </td>
-       <td>
-        $100 亿 到 $140 亿
-       </td>
-       <td>
-        未披露独立估值
-       </td>
-      </tr>
-      <tr>
-       <td>
-        保底
-       </td>
-       <td>
-        17.5%/5 年最低回报
-       </td>
-       <td>
-        无披露保底
-       </td>
-      </tr>
-      <tr>
-       <td>
-        控制
-       </td>
-       <td>
-        多数股权加超级投票权
-       </td>
-       <td>
-        独立实体，资源嵌入
-       </td>
-      </tr>
-      <tr>
-       <td>
-        首笔收购
-       </td>
-       <td>
-        Tomoro（约 150 FDE）
-       </td>
-       <td>
-        Fractional AI（创始运营核心）
-       </td>
-      </tr>
-      <tr>
-       <td>
-        本质
-       </td>
-       <td>
-        OpenAI 主导、PE 兜底的杠杆扩张机器
-       </td>
-       <td>
-        多方共担、不设兜底的咨询替代实验
-       </td>
-      </tr>
-     </tbody>
-    </table>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
-        HONGSHAN
-       </div>
-       <div class="ft-zh">
-        红杉科创平台
-       </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      15 / 24
-     </div>
-     <div class="ft-tag">
-      From lab to industry and beyond
-     </div>
-    </div>
-   </section>
-   <!-- ── Slide 16: Part 3 · Ordo | Ordo 本身就是最后一公里场景的公司——内生 AI 化做出 10× 人效差距 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</div><div class="viz-cap">已签硬合同 8 年 $1.4万亿，2025 收入仅 ~$165亿</div><div class="block" style="border-left-color:#C00000"><div class="b-h" style="color:#C00000">OpenAI 被算力缺口逼着做 JV</div><ul class="b-ev"><li>已和 Broadcom / Oracle / Microsoft 等签约，8 年累计算力义务 ~$1.4万亿</li><li>2025 收入仅 <span class="hl">$130–200亿</span>，年度义务数倍于当年收入</li></ul></div><div class="block" style="border-left-color:#D9A300"><div class="b-h" style="color:#D9A300">用 17.5% 保底换 PE 现金，但兑现极难</div><ul class="b-ev"><li>覆盖 $40亿的 <span class="hl">17.5%</span> 需约 <span class="hl">$47亿</span> 年收入，约 3100 个并行项目</li><li>Tomoro 起点仅 150 人；IPO 后用股票还或 token credit 抵债</li></ul></div></div></div><div class="ft"><div class="ft-logo"><div class="ft-logo-tx"><div class="ft-h">HONGSHAN</div><div class="ft-zh">红杉科创平台</div></div><svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32"><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27"></line><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27"></line></svg></div><div class="ft-no">13 / 23</div><div class="ft-tag">From lab to industry and beyond</div></div></section>
+
+
+
+
+
+
+
+<!-- ── Slide 14: Part 3 · Ordo | Ordo 本身就是最后一公里场景的公司——内生 AI 化做出 10× 人效差距 ── --><section class="slide">
+<div class="eyebrow">
      Part 3 · Ordo
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       Ordo 本身就是最后一公里场景的公司——内生 AI 化做出 10× 人效差距
      </h2>
-    </div>
-    <div class="body2 has-viz">
-     <div class="vcol">
-      <ol class="logic-list">
-       <li>
+</div>
+<div class="body2 has-viz">
+<div class="vcol">
+<ol class="logic-list">
+<li>
         Ordo 本身就是最后一公里场景的公司——它的产品是把 AI 工具与真实业务对接、在自己内部先跑通，而不是把 AI 产品卖给客户。
        </li>
-       <li>
+<li>
         Ordo 是我们 portfolio 里的单公司样本，从公司层面剖析AI落地。
        </li>
-       <li>
+<li>
         在同一家公司内部已经做出
         <span class="hl">
          10×
         </span>
         人效差距：普通员工约 $2-3 万 / 年 vs 深度用 AI 员工约 $20 万 / 年。
        </li>
-       <li>
+<li>
         靠三件接地气的事：CTO 自研 Co-work 平台、全员激励让人自下而上找机会、抽 AI Native 小组牵引。
        </li>
-       <li>
+<li>
         终点是组织从 120 人压到约 50 人、净利翻倍；CEO 必须从管理者变成一线产品定义者，和另外两条路径同构。
        </li>
-      </ol>
-     </div>
-     <div class="tcol">
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
-        <span class="hl">
+</ol>
+</div>
+<div class="tcol">
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
+<span class="hl">
          10 倍
         </span>
         人效差距已是现实，不是推演
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          普通员工约
          <span class="hl">
           $2-3 万 / 年
@@ -2018,1199 +1401,957 @@ body{font-family:"Kaiti TC","Kaiti SC","STKaiti",Kaiti,"KaiTi",Arial,serif;color
          <span class="hl">
           $20 万 / 年
          </span>
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</li>
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         靠的是三件接地气的事，资金规模其实很小
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          CTO 自研 Co-work 平台做技术底座
         </li>
-        <li>
+<li>
          全员激励让人自下而上找 AI 机会，报销账号 + 月度审核用量
         </li>
-        <li>
+<li>
          抽不到 10 人组 AI Native 小组牵引；Skill/Agent 被采纳奖励 500-5000 元，月池约
          <span class="hl">
           2 万 RMB
          </span>
-        </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</li>
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         终点是组织从 120 人压到约 50 人、净利翻倍、反馈周期从碎片化压到 2 天
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          仅留约 50 名优秀实践者，营收更多同时净利
          <span class="hl">
           2×
          </span>
-        </li>
-        <li>
+</li>
+<li>
          办公地点从北京 + 杭州两地统一迁到杭州
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         CEO 角色被迫从管理者变成一线产品定义者，和另外两条路径完全同构
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          亲自参与七八十名员工考核、观察怎么用 AI、当场把一线需求转开发逻辑给 CTO
         </li>
-        <li>
+<li>
          GC partner 参与被投运营、Anthropic FDE 驻场理解客户业务、Ordo CEO 亲自到场——产品定义必须在现场完成，不能远程、不能外包
         </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
+</ul>
+</div>
+</div>
+</div>
+<div class="note">
+<span class="note-l">
       口头补充
      </span>
      Ordo 可复制性最高，但规模化范围有限，目前只是单家公司的内部实证。
     </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      16 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">14 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 17: Part 4 · 中国能不能复制 | 中国底座太薄，AI化无法跳级直接复制——两条路径可以接近复制 ── -->
-   <section class="slide">
-    <div class="eyebrow">
-     Part 4 · 中国能不能复制
-    </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
-      中国底座太薄，AI化无法跳级直接复制——两条路径可以接近复制
-     </h2>
-    </div>
-    <ol class="logic-list">
-     <li>
-      底座是AI化的硬前提：Palantir将Ontology称为公司
-      <span class="hl">
-       "beating heart"
-      </span>
-      ，其前提是企业有数字化底座；国内多位传统SaaS转AI B2B创始人访谈一致印证：
-      <span class="hl">
-       数据层阻碍是AI落地的核心卡点
-      </span>
-      ，不是模型能力本身。
-     </li>
-     <li>
-      中国现状：CRM渗透
-      <span class="hl">
-       不足15%
-      </span>
-      ，中小ERP
-      <span class="hl">
-       不足30%
-      </span>
-      ，底座太薄；JV-FDE模式直接搬到中国，FDE会退化成先做数字化，经济模型不成立。
-     </li>
-     <li>
-      两条可行路径：（A）把数字化转型本身做成新赛道，先打好底座再AI化；（B）从最痛的单点Workflow切入，不要求全量数字化，随AI能力成熟再由点及面扩展。
-     </li>
-    </ol>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
-        HONGSHAN
-       </div>
-       <div class="ft-zh">
-        红杉科创平台
-       </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      17 / 24
-     </div>
-     <div class="ft-tag">
-      From lab to industry and beyond
-     </div>
-    </div>
-   </section>
-   <!-- ── Slide 18: Part 4 · 中国能不能复制 | 路径A：数字化转型本身是新赛道——先打好底座，再AI化 ── -->
-   <section class="slide">
-    <div class="eyebrow">
-     Part 4 · 中国能不能复制
-    </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
-      路径A：数字化转型本身是新赛道——先打好底座，再AI化
-     </h2>
-    </div>
-    <div class="grid" style="grid-template-columns:repeat(3,1fr)">
-     <div class="block" style="border-left-color:#00B050">
-      <div class="b-h" style="color:#00B050">
-       AI浪潮提升了企业的数字化意愿，打开了窗口期
-      </div>
-      <ul class="b-ev">
-       <li>
-        客户以前对数字化转型漠然，现在为了追上AI必须启动，买单意愿更强
-       </li>
-       <li>
-        这是SaaS时代没有的需求驱动力，且窗口期正在缩短
-       </li>
-      </ul>
-     </div>
-     <div class="block" style="border-left-color:#00B050">
-      <div class="b-h" style="color:#00B050">
-       切入方式：不直接推AI，先帮企业打好数字化底座
-      </div>
-      <ul class="b-ev">
-       <li>
-        数据结构化、API化、workflow梳理——只做底座，不碰AI
-       </li>
-       <li>
-        底座完成后，该企业自然成为AI产品最合格的下一批买家
-       </li>
-       <li>
-        形成"底座服务→AI产品"两步转化漏斗
-       </li>
-      </ul>
-     </div>
-     <div class="block" style="border-left-color:#00B0F0">
-      <div class="b-h" style="color:#00B0F0">
-       目标客群：有AI化意愿但底座不够的中型服务业企业
-      </div>
-      <ul class="b-ev">
-       <li>
-        这类客户改造意愿强、转化路径清晰，比国企更灵活
-       </li>
-       <li>
-        服务行业人力密集、流程标准化程度低，数字化空间大
-       </li>
-       <li>
-        AI化完成后，毛利结构从服务业向软件级跃升
-       </li>
-      </ul>
-     </div>
-    </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
-        HONGSHAN
-       </div>
-       <div class="ft-zh">
-        红杉科创平台
-       </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      18 / 24
-     </div>
-     <div class="ft-tag">
-      From lab to industry and beyond
-     </div>
-    </div>
-   </section>
-   <!-- ── Slide 19: Part 4 · 中国能不能复制 | 路径B：从Workflow最痛节点单点切入，随AI成熟再由点及面 ── -->
-   <section class="slide">
-    <div class="eyebrow">
-     Part 4 · 中国能不能复制
-    </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
-      路径B：从Workflow最痛节点单点切入，随AI成熟再由点及面
-     </h2>
-    </div>
-    <div class="grid" style="grid-template-columns:repeat(3,1fr)">
-     <div class="block" style="border-left-color:#00B050">
-      <div class="b-h" style="color:#00B050">
-       不要求全量数字化——找最高频、最痛、人工依赖最重的单一节点
-      </div>
-      <ul class="b-ev">
-       <li>
-        只把这一个节点的数据结构化，不触碰底座全局
-       </li>
-       <li>
-        选点标准：量化ROI清晰、人工替代率高、交付周期短
-       </li>
-       <li>
-        单点切入大幅降低客户启动门槛和决策阻力
-       </li>
-      </ul>
-     </div>
-     <div class="block" style="border-left-color:#00B050">
-      <div class="b-h" style="color:#00B050">
-       节点验证成功后，由单点扩展到平台
-      </div>
-      <ul class="b-ev">
-       <li>
-        每一个成功节点都在推动底层数字化补全
-       </li>
-       <li>
-        随AI能力成熟，周边节点逐步跟上，最终实现全平台AI化
-       </li>
-       <li>
-        比一次性全面改造风险更低，ROI验证更快，客户接受度更高
-       </li>
-      </ul>
-     </div>
-     <div class="block" style="border-left-color:#00B0F0">
-      <div class="b-h" style="color:#00B0F0">
-       这条路径在中国场景已有先例可参考
-      </div>
-      <ul class="b-ev">
-       <li>
-        Coding助手、设计生成、客服AI等单点切入已被多家公司验证
-       </li>
-       <li>
-        关键是选对第一个节点：形成可度量的ROI样板，再以此撬动全面改造
-       </li>
-      </ul>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
-      口头补充
-     </span>
-     两条路径并不互斥——路径A适合有意愿系统改造的客户；路径B适合不愿大改但有单点痛点的客户。选哪条看客户改造意愿和资源投入能力。
-    </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
-        HONGSHAN
-       </div>
-       <div class="ft-zh">
-        红杉科创平台
-       </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      19 / 24
-     </div>
-     <div class="ft-tag">
-      From lab to industry and beyond
-     </div>
-    </div>
-   </section>
-   <!-- ── Slide 20: Closing | 三类打法各异：GC/Ordo 切服务业改造深，JV 切 IT——从投资视角看，早期机会少，服务业是正确方向 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 15: Part 4 · 中国能不能复制 | 数字化底座弱制约了直接复制——服务业 Rollup 和 AI BPO 单点切入是更好的打法 ── --><section class="slide"><div class="eyebrow">Part 4 · 中国能不能复制</div><div class="title-row"><div class="tbar"></div><h2 class="title">数字化底座弱制约了直接复制——服务业 Rollup 和 AI BPO 单点切入是更好的打法</h2></div><ol class="logic-list"><li>中国数字化底座薄弱（CRM渗透 <span class="hl">不足15%</span>，中小ERP <span class="hl">不足30%</span>），催生"数字化第二春"趋势，但玩家已多——传统集成商（软通动力等）、国央企代表、滴普科技类AI新贵——我们 <span class="hl">不认为早期投资价值高</span></li><li>在数字化底座差的背景下，<span class="hl">更好的打法是类似 GC</span>：用 AI 做 Rollup 切传统服务业——服务业不依赖底座，人力密集、流程可标准化，AI 改造空间更大</li><li>针对 IT 方向，<span class="hl">不应直接改造整个平台</span>，而是先抓 workflow 中最痛的单节点（AI 最能提效处），由点击破再逐步拓展；workflow 中 <span class="hl">最好替代的节点是 BPO</span>，我们倾向于多看 AI BPO 项目</li></ol><div class="ft"><div class="ft-logo"><div class="ft-logo-tx"><div class="ft-h">HONGSHAN</div><div class="ft-zh">红杉科创平台</div></div><svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32"><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27"></line><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27"></line></svg></div><div class="ft-no">15 / 23</div><div class="ft-tag">From lab to industry and beyond</div></div></section><!-- ── Slide 16: Part 4 · 中国能不能复制 | 数字化第二春趋势真实，但三类玩家已入场——早期投资价值不高 ── --><section class="slide"><div class="eyebrow">Part 4 · 中国能不能复制</div><div class="title-row"><div class="tbar"></div><h2 class="title">数字化第二春趋势真实，但三类玩家已入场——早期投资价值不高</h2></div><div class="grid" style="grid-template-columns:repeat(3,1fr)"><div class="block" style="border-left-color:#00B050"><div class="b-h" style="color:#00B050">底座薄弱确实催生了数字化第二春</div><ul class="b-ev"><li>中国中小企业 CRM 渗透不足 15%，ERP 不足 30%；AI 浪潮让客户买单意愿首次提升</li><li>整个赛道 TAM 真实存在，窗口期正在缩短</li></ul></div><div class="block" style="border-left-color:#C00000"><div class="b-h" style="color:#C00000">但三类玩家已在赛道内，格局较拥挤</div><ul class="b-ev"><li>传统集成商：软通动力/软通国际等，渠道资源深厚</li><li>国央企代表：有政策背书和采购关系，享非市场化优势</li><li>滴普科技类 AI 新贵：技术能力强，已有市场份额</li></ul></div><div class="block" style="border-left-color:#D9A300"><div class="b-h" style="color:#D9A300">结论：不倾向于早期重仓该赛道</div><ul class="b-ev"><li>格局拥挤、门槛不高、差异化难建立</li><li>国央企背景玩家享有非市场化优势，VC 的 alpha 空间有限</li></ul></div></div><div class="ft"><div class="ft-logo"><div class="ft-logo-tx"><div class="ft-h">HONGSHAN</div><div class="ft-zh">红杉科创平台</div></div><svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32"><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27"></line><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27"></line></svg></div><div class="ft-no">16 / 23</div><div class="ft-tag">From lab to industry and beyond</div></div></section><!-- ── Slide 17: Part 4 · 中国能不能复制 | 服务业 Rollup 是更好的打法——不依赖数字化底座，GC 逻辑在中国可迁移 ── --><section class="slide"><div class="eyebrow">Part 4 · 中国能不能复制</div><div class="title-row"><div class="tbar"></div><h2 class="title">服务业 Rollup 是更好的打法——不依赖数字化底座，GC 逻辑在中国可迁移</h2></div><div class="grid" style="grid-template-columns:repeat(3,1fr)"><div class="block" style="border-left-color:#00B050"><div class="b-h" style="color:#00B050">GC 的 Rollup 逻辑为何在中国也成立</div><ul class="b-ev"><li>服务业不需要数字化底座——直接在运营层植入 AI，不触碰底座全局</li><li>中国服务业人力密集，成本结构与美国相近；AI 替代相同类型低技能重复劳动</li></ul></div><div class="block" style="border-left-color:#00B050"><div class="b-h" style="color:#00B050">中国特有的结构性优势让 Rollup 更急迫</div><ul class="b-ev"><li>人口红利收缩让降本需求急迫，劳动力成本上升使 AI ROI 更快兑现</li><li>部分垂类（餐饮、零售、物业管理）碎片化程度高，整合机会窗口尚未关闭</li></ul></div><div class="block" style="border-left-color:#00B0F0"><div class="b-h" style="color:#00B0F0">我们的投资方向</div><ul class="b-ev"><li>寻找有 operator 基因的创始人，而非纯技术团队</li><li>优先看已有真实运营 P&amp;L 的公司，而非卖 SaaS 工具</li><li>目标垂类：人力密集、流程可标准化、客户付费意愿已有验证</li></ul></div></div><div class="ft"><div class="ft-logo"><div class="ft-logo-tx"><div class="ft-h">HONGSHAN</div><div class="ft-zh">红杉科创平台</div></div><svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32"><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27"></line><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27"></line></svg></div><div class="ft-no">17 / 23</div><div class="ft-tag">From lab to industry and beyond</div></div></section><!-- ── Slide 18: Part 4 · 中国能不能复制 | IT 方向：AI BPO 是最佳单点切入——由点及面，逐步拓展整个平台 ── --><section class="slide"><div class="eyebrow">Part 4 · 中国能不能复制</div><div class="title-row"><div class="tbar"></div><h2 class="title">IT 方向：AI BPO 是最佳单点切入——由点及面，逐步拓展整个平台</h2></div><div class="grid" style="grid-template-columns:repeat(3,1fr)"><div class="block" style="border-left-color:#00B050"><div class="b-h" style="color:#00B050">直接改造整个平台代价太高，单点切入是正确姿势</div><ul class="b-ev"><li>客户数字化底座参差，全量改造启动门槛极高</li><li>先找 workflow 中最痛、最高频、AI 最能提效的单节点；量化 ROI 清晰即可启动</li><li>单点成功后作为样板，撬动周边节点逐步扩展</li></ul></div><div class="block" style="border-left-color:#00B050"><div class="b-h" style="color:#00B050">BPO 是 workflow 中最好替代的节点</div><ul class="b-ev"><li>任务标准化程度高，人工替代率最高；重复性强、量大</li><li>客户对 AI 替代接受度高，交付周期短，ROI 验证快</li><li>Crescendo 模式直接参考：AI 接管 Tier-1，人工只兜底</li></ul></div><div class="block" style="border-left-color:#00B0F0"><div class="b-h" style="color:#00B0F0">我们倾向于多看 AI BPO 类项目</div><ul class="b-ev"><li>从 BPO 单点切入，形成可度量 ROI 样板</li><li>验证后逐步拓展至整个运营平台</li><li>最终路径：BPO → 运营平台 → 软件级 margin</li></ul></div></div><div class="ft"><div class="ft-logo"><div class="ft-logo-tx"><div class="ft-h">HONGSHAN</div><div class="ft-zh">红杉科创平台</div></div><svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32"><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27"></line><line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27"></line></svg></div><div class="ft-no">18 / 23</div><div class="ft-tag">From lab to industry and beyond</div></div></section>
+
+
+
+
+
+<!-- ── Slide 19: Closing | 三类打法各异：GC/Ordo 切服务业改造深，JV 切 IT——从投资视角看，早期机会少，服务业是正确方向 ── --><section class="slide">
+<div class="eyebrow">
      Closing
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       三类打法各异：GC/Ordo 切服务业改造深，JV 切 IT——从投资视角看，早期机会少，服务业是正确方向
      </h2>
-    </div>
-    <div class="body2 has-viz">
-     <div class="vcol">
-      <table class="mx">
-       <thead>
-        <tr>
-         <th>
-         </th>
-         <th>
+</div>
+<div class="body2 has-viz">
+<div class="vcol">
+<table class="mx">
+<thead>
+<tr>
+<th>
+</th>
+<th>
           GC
          </th>
-         <th>
+<th>
           JV
          </th>
-         <th>
+<th>
           Ordo
          </th>
-        </tr>
-       </thead>
-       <tbody>
-        <tr>
-         <td class="mxd">
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="mxd">
           资本密度
          </td>
-         <td>
-          <div class="mxb">
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-          </div>
-          <span class="mxv">
+<td>
+<div class="mxb">
+<i class="on">
+</i>
+<i class="on">
+</i>
+<i class="on">
+</i>
+</div>
+<span class="mxv">
            H
           </span>
-         </td>
-         <td>
-          <div class="mxb">
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-           <i class="">
-           </i>
-          </div>
-          <span class="mxv">
+</td>
+<td>
+<div class="mxb">
+<i class="on">
+</i>
+<i class="on">
+</i>
+<i class="">
+</i>
+</div>
+<span class="mxv">
            M
           </span>
-         </td>
-         <td>
-          <div class="mxb">
-           <i class="on">
-           </i>
-           <i class="">
-           </i>
-           <i class="">
-           </i>
-          </div>
-          <span class="mxv">
+</td>
+<td>
+<div class="mxb">
+<i class="on">
+</i>
+<i class="">
+</i>
+<i class="">
+</i>
+</div>
+<span class="mxv">
            L
           </span>
-         </td>
-        </tr>
-        <tr>
-         <td class="mxd">
+</td>
+</tr>
+<tr>
+<td class="mxd">
           控制力
          </td>
-         <td>
-          <div class="mxb">
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-          </div>
-          <span class="mxv">
+<td>
+<div class="mxb">
+<i class="on">
+</i>
+<i class="on">
+</i>
+<i class="on">
+</i>
+</div>
+<span class="mxv">
            H
           </span>
-         </td>
-         <td>
-          <div class="mxb">
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-           <i class="">
-           </i>
-          </div>
-          <span class="mxv">
+</td>
+<td>
+<div class="mxb">
+<i class="on">
+</i>
+<i class="on">
+</i>
+<i class="">
+</i>
+</div>
+<span class="mxv">
            M
           </span>
-         </td>
-         <td>
-          <div class="mxb">
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-          </div>
-          <span class="mxv">
+</td>
+<td>
+<div class="mxb">
+<i class="on">
+</i>
+<i class="on">
+</i>
+<i class="on">
+</i>
+</div>
+<span class="mxv">
            H
           </span>
-         </td>
-        </tr>
-        <tr>
-         <td class="mxd">
+</td>
+</tr>
+<tr>
+<td class="mxd">
           改造深度
          </td>
-         <td>
-          <div class="mxb">
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-          </div>
-          <span class="mxv">
+<td>
+<div class="mxb">
+<i class="on">
+</i>
+<i class="on">
+</i>
+<i class="on">
+</i>
+</div>
+<span class="mxv">
            H
           </span>
-         </td>
-         <td>
-          <div class="mxb">
-           <i class="on">
-           </i>
-           <i class="">
-           </i>
-           <i class="">
-           </i>
-          </div>
-          <span class="mxv">
+</td>
+<td>
+<div class="mxb">
+<i class="on">
+</i>
+<i class="">
+</i>
+<i class="">
+</i>
+</div>
+<span class="mxv">
            L
           </span>
-         </td>
-         <td>
-          <div class="mxb">
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-           <i class="on">
-           </i>
-          </div>
-          <span class="mxv">
+</td>
+<td>
+<div class="mxb">
+<i class="on">
+</i>
+<i class="on">
+</i>
+<i class="on">
+</i>
+</div>
+<span class="mxv">
            H
           </span>
-         </td>
-        </tr>
-       </tbody>
-      </table>
-      <div class="viz-cap">
+</td>
+</tr>
+</tbody>
+</table>
+<div class="viz-cap">
        Ordo 改造最深；JV 受非技术阻力限制，改造深度最低
       </div>
-     </div>
-     <div class="tcol">
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</div>
+<div class="tcol">
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         GC 和 Ordo 卖最终结果（改造后的 P&amp;L），JV 卖 IT 服务——改造深度决定价值捕获
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          三条路径都绕开了卖工具让你自己用的逻辑，必须直接参与运营
         </li>
-        <li>
+<li>
          GC 收购后 AI 改造服务业 P&amp;L；Ordo 内部改造自身运营；JV 向 IT/科技企业出售部署服务
         </li>
-        <li>
+<li>
          改造深度：GC = H，Ordo = H，JV = L（非技术商业阻力是主要制约）
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         最稀缺的不是模型能力——模型能力没有区分度，最后一公里部署才能才是差异化来源
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          模型层正在商品化，前沿输出价格三年降 94.5%；谁都能调用同样的模型
         </li>
-        <li>
+<li>
          拉开差异的是：行业 know-how、运营控制力、愿意亲自下场的组织与 CEO
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#00B0F0">
-       <div class="b-h" style="color:#00B0F0">
+</ul>
+</div>
+<div class="block" style="border-left-color:#00B0F0">
+<div class="b-h" style="color:#00B0F0">
         拉开差异化：三类玩家从南坡、北坡各自倾斜
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          对模型公司（JV）：FDE 驻场积累行业 know-how，但以 IT 为入口，改造深度受限于非技术阻力
         </li>
-        <li>
+<li>
          对 Ordo：内部 AI 化快速形成 OPC（运营控制平台），改造深度最深，可复制性强但规模有限
         </li>
-        <li>
+<li>
          对 GC：资本 + Rollup 切服务业，同时拿控制权和运营权——资源最重、潜在回报最大
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#D9A300">
-       <div class="b-h" style="color:#D9A300">
+</ul>
+</div>
+<div class="block" style="border-left-color:#D9A300">
+<div class="b-h" style="color:#D9A300">
         四个共同未解题，决定它现在有方向没终局
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          数字未经周期、workflow 提升未量化
         </li>
-        <li>
+<li>
          人才归属与激励未解、margin 压缩待观察
         </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
+</ul>
+</div>
+</div>
+</div>
+<div class="note">
+<span class="note-l">
       口头补充
      </span>
      从投资视角：早期阶段切入机会稀少（GC 最重、Ordo 需要 CEO 决心、JV 主要对模型公司自身有意义）；如果要押，优先押服务业改造方向——这是三条路径最终交汇的地方。第一个可验证节点是 Amex GBT 财报（预计 2027 年）。
     </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      20 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">19 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 21: Appendix · 数据速查 | GC 七案例总览 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 20: Appendix · 数据速查 | GC 七案例总览 ── --><section class="slide">
+<div class="eyebrow">
      Appendix · 数据速查
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       GC 七案例总览
      </h2>
-    </div>
-    <table class="tbl">
-     <thead>
-      <tr>
-       <th>
+</div>
+<table class="tbl">
+<thead>
+<tr>
+<th>
         公司
        </th>
-       <th>
+<th>
         品类
        </th>
-       <th>
+<th>
         传统 Margin
        </th>
-       <th>
+<th>
         AI 改造后
        </th>
-       <th>
+<th>
         自动化率
        </th>
-       <th>
+<th>
         关键数据点
        </th>
-      </tr>
-     </thead>
-     <tbody>
-      <tr>
-       <td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
         Crescendo
        </td>
-       <td>
+<td>
         CX BPO
        </td>
-       <td>
+<td>
         毛利 20-25%
        </td>
-       <td>
+<td>
         毛利 60-65%
        </td>
-       <td>
+<td>
         90% Tier-1
        </td>
-       <td>
+<td>
         ARR &gt;$1 亿（不到 2 年），估值 $5 亿；全球 CX 市场 ~$1,000 亿/年
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         Titan
        </td>
-       <td>
+<td>
         IT MSP
        </td>
-       <td>
+<td>
         净利 10-20%
        </td>
-       <td>
+<td>
         净利翻 3 倍（预期）
        </td>
-       <td>
+<td>
         38%（pilot）
        </td>
-       <td>
+<td>
         尚无 margin 改善实证；全球 MSP 市场 ~$3,000 亿
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         Long Lake
        </td>
-       <td>
+<td>
         物业到差旅
        </td>
-       <td>
+<td>
         EBITDA 8-15%
        </td>
-       <td>
+<td>
         $1 亿 EBITDA（不到 2 年）
        </td>
-       <td>
+<td>
         90%（单任务）
        </td>
-       <td>
+<td>
         $63 亿收购 Amex GBT；HOA 管理市场 ~$100-150 亿/年
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         Eudia
        </td>
-       <td>
+<td>
         法律服务
        </td>
-       <td>
+<td>
         EBITDA 15-25%
        </td>
-       <td>
+<td>
         周期时间减 90%
        </td>
-       <td>
+<td>
         90%（周期压缩）
        </td>
-       <td>
+<td>
         收购 Johnson Hana、Out-House；法律服务市场 ~$9,000 亿
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         Accrual
        </td>
-       <td>
+<td>
         会计税务
        </td>
-       <td>
+<td>
         EBITDA 15-30%
        </td>
-       <td>
+<td>
         备税时间减 85%
        </td>
-       <td>
+<td>
         未披露
        </td>
-       <td>
+<td>
         H&amp;R Block 测试中；美国会计/税务市场 ~$1,500 亿
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         Dwelly
        </td>
-       <td>
+<td>
         住宅租赁
        </td>
-       <td>
+<td>
         未披露
        </td>
-       <td>
+<td>
         未披露
        </td>
-       <td>
+<td>
         未披露
        </td>
-       <td>
+<td>
         10,000+ 套在管，GMV £2 亿；英国住宅租赁 ~£180 亿/年
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         Hippocratic AI
        </td>
-       <td>
+<td>
         医疗 AI
        </td>
-       <td>
+<td>
         N/A
        </td>
-       <td>
+<td>
         N/A
        </td>
-       <td>
+<td>
         N/A
        </td>
-       <td>
+<td>
         估值 $35 亿（Series C）；GC 控制力弱（例外参考）
        </td>
-      </tr>
-     </tbody>
-    </table>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+</tr>
+</tbody>
+</table>
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      21 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">20 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 22: Appendix · 数据速查 | 三条路径对比 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 21: Appendix · 数据速查 | 三条路径对比 ── --><section class="slide">
+<div class="eyebrow">
      Appendix · 数据速查
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       三条路径对比
      </h2>
-    </div>
-    <table class="tbl">
-     <thead>
-      <tr>
-       <th>
+</div>
+<table class="tbl">
+<thead>
+<tr>
+<th>
         维度
        </th>
-       <th>
+<th>
         GC
        </th>
-       <th>
+<th>
         OpenAI/Anthropic JV
        </th>
-       <th>
+<th>
         Ordo
        </th>
-      </tr>
-     </thead>
-     <tbody>
-      <tr>
-       <td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
         资金规模
        </td>
-       <td>
+<td>
         $15 亿 Creation Fund
        </td>
-       <td>
+<td>
         $15 亿 到 $100 亿 JV
        </td>
-       <td>
+<td>
         自筹（月约 2 万 RMB）
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         改造对象
        </td>
-       <td>
+<td>
         收购控股的服务业公司
        </td>
-       <td>
+<td>
         PE portfolio companies
        </td>
-       <td>
+<td>
         自己公司内部
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         改造方式
        </td>
-       <td>
+<td>
         控股收购 + AI 平台
        </td>
-       <td>
+<td>
         FDE 驻场 + AI 改造
        </td>
-       <td>
+<td>
         全员激励 + 自研平台
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         核心改善
        </td>
-       <td>
+<td>
         EBITDA 10-15% → 30-40%
        </td>
-       <td>
+<td>
         尚未披露（17.5% 保底）
        </td>
-       <td>
+<td>
         人效 2-3 万 → 20 万（10×）
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         已验证案例
        </td>
-       <td>
+<td>
         7 个（Crescendo 最成熟）
        </td>
-       <td>
+<td>
         0 个（首批刚完成）
        </td>
-       <td>
+<td>
         1 个（内部）
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         对中国可复制性
        </td>
-       <td>
+<td>
         低，部分行业可平移
        </td>
-       <td>
+<td>
         中低，机会在数字化第二春
        </td>
-       <td>
+<td>
         高，有决心即可试
        </td>
-      </tr>
-     </tbody>
-    </table>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+</tr>
+</tbody>
+</table>
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      22 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">21 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 23: Appendix · 数据速查 | GC EBITDA 翻倍数学（备 QA 用） ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 22: Appendix · 数据速查 | GC EBITDA 翻倍数学（备 QA 用） ── --><section class="slide">
+<div class="eyebrow">
      Appendix · 数据速查
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       GC EBITDA 翻倍数学（备 QA 用）
      </h2>
-    </div>
-    <table class="tbl">
-     <thead>
-      <tr>
-       <th>
+</div>
+<table class="tbl">
+<thead>
+<tr>
+<th>
         场景
        </th>
-       <th>
+<th>
         组织策略
        </th>
-       <th>
+<th>
         起点 EBITDA
        </th>
-       <th>
+<th>
         改造后
        </th>
-       <th>
+<th>
         倍数
        </th>
-      </tr>
-     </thead>
-     <tbody>
-      <tr>
-       <td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
         传统服务业基准
        </td>
-       <td>
+<td>
         参考起点（$100 收入 / $65 人力 / $22 其他 / $13 EBITDA）
        </td>
-       <td>
+<td>
         13%
        </td>
-       <td>
+<td>
         —
        </td>
-       <td>
+<td>
         —
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         30% 自动化
        </td>
-       <td>
+<td>
         保人员，吃 throughput
        </td>
-       <td>
+<td>
         13%
        </td>
-       <td>
+<td>
         29%
        </td>
-       <td>
+<td>
         2.2×
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         50% 自动化
        </td>
-       <td>
+<td>
         部分减员（约 20%）
        </td>
-       <td>
+<td>
         13%
        </td>
-       <td>
+<td>
         30%
        </td>
-       <td>
+<td>
         2.3×
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         70%+ 自动化（Crescendo 模式）
        </td>
-       <td>
+<td>
         结构性重构
        </td>
-       <td>
+<td>
         毛利 20-25%
        </td>
-       <td>
+<td>
         毛利 60-65%
        </td>
-       <td>
+<td>
         约 2.6×（毛利）
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         Titan pilot 单点实证
        </td>
-       <td>
+<td>
         38% 自动化
        </td>
-       <td>
+<td>
         15%
        </td>
-       <td>
+<td>
         26%
        </td>
-       <td>
+<td>
         约 1.7×
        </td>
-      </tr>
-      <tr>
-       <td>
+</tr>
+<tr>
+<td>
         数据来源说明
        </td>
-       <td>
+<td>
         全部 GC 自报，未经独立审计；Crescendo / Long Lake 是仅有的单点实证
        </td>
-       <td>
+<td>
         —
        </td>
-       <td>
+<td>
         —
        </td>
-       <td>
+<td>
         —
        </td>
-      </tr>
-     </tbody>
-    </table>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+</tr>
+</tbody>
+</table>
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      23 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">22 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-   <!-- ── Slide 24: Appendix · 中国可迁移性证据 | 底座是AI化的前提，不是可选项——Palantir和创始人访谈双重印证 ── -->
-   <section class="slide">
-    <div class="eyebrow">
+</div>
+</section>
+
+<!-- ── Slide 23: Appendix · 中国可迁移性证据 | 底座是AI化的前提，不是可选项——Palantir和创始人访谈双重印证 ── --><section class="slide">
+<div class="eyebrow">
      Appendix · 中国可迁移性证据
     </div>
-    <div class="title-row">
-     <div class="tbar">
-     </div>
-     <h2 class="title">
+<div class="title-row">
+<div class="tbar">
+</div>
+<h2 class="title">
       底座是AI化的前提，不是可选项——Palantir和创始人访谈双重印证
      </h2>
-    </div>
-    <div class="body2 has-viz">
-     <div class="vcol">
-      <div class="vtt">
+</div>
+<div class="body2 has-viz">
+<div class="vcol">
+<div class="vtt">
        两类证据
       </div>
-      <div class="tl">
-       <div class="tlg">
-        <div class="tlh">
+<div class="tl">
+<div class="tlg">
+<div class="tlh">
          Palantir案例
         </div>
-        <ul class="tll">
-         <li>
+<ul class="tll">
+<li>
           Ontology = 公司
           <span class="hl">
            "beating heart"
           </span>
           （CEO Alex Karp原话）
          </li>
-         <li>
+<li>
           也是其能够盈利的唯一根本原因
          </li>
-         <li>
+<li>
           前提：企业必须有数字化底座，Ontology才能建立
          </li>
-         <li>
+<li>
           底座到位时，FDE下场效率大幅提升
          </li>
-        </ul>
-       </div>
-       <div class="tlg">
-        <div class="tlh">
+</ul>
+</div>
+<div class="tlg">
+<div class="tlh">
          国内创始人访谈
         </div>
-        <ul class="tll">
-         <li>
+<ul class="tll">
+<li>
           与多位传统SaaS转AI B2B创始人交流，反馈一致
          </li>
-         <li>
+<li>
           AI产品落地时，
           <span class="hl">
            数据层阻碍最大
           </span>
-         </li>
-         <li>
+</li>
+<li>
           大量交付时间在处理数据问题，不在AI本身
          </li>
-         <li>
+<li>
           底座缺失是核心卡点，不是边缘问题
          </li>
-        </ul>
-       </div>
-      </div>
-     </div>
-     <div class="tcol">
-      <div class="block" style="border-left-color:#00B050">
-       <div class="b-h" style="color:#00B050">
+</ul>
+</div>
+</div>
+</div>
+<div class="tcol">
+<div class="block" style="border-left-color:#00B050">
+<div class="b-h" style="color:#00B050">
         Palantir Ontology是公司"beating heart"，也是其盈利的根本
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          CEO Alex Karp将Ontology称为公司核心竞争力，也是其能盈利的唯一原因
         </li>
-        <li>
+<li>
          Ontology将企业数据资产语义化，使AI能理解业务对象与关系
         </li>
-        <li>
+<li>
          底座到位时，FDE进场效率大幅提升；底座薄时，FDE退化成先做数字化
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#C00000">
-       <div class="b-h" style="color:#C00000">
+</ul>
+</div>
+<div class="block" style="border-left-color:#C00000">
+<div class="b-h" style="color:#C00000">
         国内AI B2B创始人：数据层是最大拦路虎
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          多家传统SaaS转型AI B2B公司反馈一致：数据孤岛严重，接入成本极高
         </li>
-        <li>
+<li>
          大量交付时间在处理数据问题，AI功能反而是次要部分
         </li>
-        <li>
+<li>
          底座缺失不是边缘异常，是常见卡点
         </li>
-       </ul>
-      </div>
-      <div class="block" style="border-left-color:#D9A300">
-       <div class="b-h" style="color:#D9A300">
+</ul>
+</div>
+<div class="block" style="border-left-color:#D9A300">
+<div class="b-h" style="color:#D9A300">
         结论：中国底座现状决定AI化无法跳级
        </div>
-       <ul class="b-ev">
-        <li>
+<ul class="b-ev">
+<li>
          CRM渗透
          <span class="hl">
           不足15%
@@ -3221,49 +2362,47 @@ body{font-family:"Kaiti TC","Kaiti SC","STKaiti",Kaiti,"KaiTi",Arial,serif;color
          </span>
          ，底座薄是普遍现象
         </li>
-        <li>
+<li>
          跳过数字化直接AI化，在多数中国企业场景行不通
         </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="note">
-     <span class="note-l">
+</ul>
+</div>
+</div>
+</div>
+<div class="note">
+<span class="note-l">
       口头补充
      </span>
      Palantir FDE模式之所以能在美国跑通，是因为美国SaaS时代已完成数字化底座建设；中国缺少这一层，FDE进场必然先退化成SI。
     </div>
-    <div class="ft">
-     <div class="ft-logo">
-      <div class="ft-logo-tx">
-       <div class="ft-h">
+<div class="ft">
+<div class="ft-logo">
+<div class="ft-logo-tx">
+<div class="ft-h">
         HONGSHAN
        </div>
-       <div class="ft-zh">
+<div class="ft-zh">
         红杉科创平台
        </div>
-      </div>
-      <svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
-       </line>
-       <line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
-       </line>
-      </svg>
-     </div>
-     <div class="ft-no">
-      24 / 24
-     </div>
-     <div class="ft-tag">
+</div>
+<svg aria-hidden="true" class="ft-x" viewbox="0 0 32 32">
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="5" x2="27" y1="5" y2="27">
+</line>
+<line stroke="#00B050" stroke-linecap="round" stroke-width="7" x1="27" x2="5" y1="5" y2="27">
+</line>
+</svg>
+</div>
+<div class="ft-no">23 / 23</div>
+<div class="ft-tag">
       From lab to industry and beyond
      </div>
-    </div>
-   </section>
-  </div>
-  <div class="hint">
+</div>
+</section>
+</div>
+<div class="hint">
    ← → 翻页
   </div>
-  <script>
+<script>
    const sl=[...document.querySelectorAll('.slide')];let i=0;
 function go(n){i=Math.max(0,Math.min(sl.length-1,n));sl[i].scrollIntoView({behavior:'smooth'});}
 addEventListener('keydown',e=>{
@@ -3272,5 +2411,5 @@ addEventListener('keydown',e=>{
 const io=new IntersectionObserver(es=>{es.forEach(x=>{if(x.isIntersecting)i=sl.indexOf(x.target);});},{threshold:.5});
 sl.forEach(s=>io.observe(s));
   </script>
- </body>
+</body>
 </html>
